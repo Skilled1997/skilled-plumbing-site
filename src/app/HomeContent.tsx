@@ -103,8 +103,8 @@ export default function HomePage() {
         {/* pt-40 on mobile ensures the text starts well below the 24-unit header */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-20 lg:pt-32">
           <div className="max-w-3xl">
-            <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1] text-orange-500">
-              Old School <span className="text-orange-500">Service.</span>
+            <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
+              Old School <span className="text-blue-400">Service.</span>
             </h1>
             <p className="text-xl lg:text-2xl font-light text-slate-200 mb-10 leading-relaxed max-w-xl">
               Built on <span className="font-semibold text-white">Trust, Honesty, and Integrity.</span>
