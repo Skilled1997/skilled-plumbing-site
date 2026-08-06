@@ -2,67 +2,13 @@
 
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-import { CheckCircle2, Siren, Home, Wrench, Flame, ArrowRight } from "lucide-react";
+import { CheckCircle2, Home, Wrench, Flame, ArrowRight } from "lucide-react";
+import { serviceCategories } from "./servicesData";
+
+const ICONS = { home: Home, wrench: Wrench, flame: Flame };
 
 export default function ServicesContent() {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
-
-  // Grouped the raw list into logical, customer-friendly categories
-  const categories = [
-    {
-      id: "installations-renovations",
-      title: "Renovations & Home Extensions",
-      desc: "From minor bathroom updates to complete structural plumbing for new builds. We work with you to ensure perfect placement and flawless finishes.",
-      imageId: "IMG_1969_mxa5nx",
-      icon: <Home className="w-6 h-6" />,
-      services: [
-        "Vanity Hanging & Installation",
-        "Home Renovations",
-        "Extensions & Additions",
-        "Wall Chasing & Concrete Cutting",
-      ]
-    },
-    {
-      id: "emergency-blockages",
-      title: "Blocked Drains",
-      desc: "Fast, reliable response when you need it most. We use specialized equipment to clear stubborn blockages and secure burst pipes to prevent property damage.",
-      imageId: "general_repairs_1_aoxt4g",
-      icon: <Wrench className="w-6 h-6" />,
-      services: [
-        "Blocked Toilets",
-        "Blocked Showers",
-        "Blocked Basins",
-        "Blocked Sinks",
-      ]
-    },
-    {
-      id: "general-maintenance",
-      title: "Hot Water, Maintenance & General Repairs",
-      desc: "Don't let minor leaks turn into major headaches. We handle all the day-to-day plumbing fixes to keep your home running efficiently.",
-      imageId: "hotty3_gsobsn",
-      icon: <Wrench className="w-6 h-6" />,
-      services: [
-        "Leaking Taps",
-        "General Tap & Tapware Repairs",
-        "Toilet Repairs & Replacements",
-        "Reticulation (Retic) Repairs",
-        "Hot Water System Repairs, Replacement & Servicing",
-        "Burst Pipe Repairs"
-      ]
-    },
-    {
-      id: "gas-hot-water",
-      title: "Gas Fitting",
-      desc: "Gas can be dangerous if appliances are not installed appropriately and by a qualified gas fitter. We install ALL gas appliances as per the manufacturer's guidelines and the Australian standards. This ensures that every single customer is safe when using their new appliance and can have absolute peace of mind that no corners were cut in the process.",
-      imageId: "gas5_zvufds",
-      icon: <Flame className="w-6 h-6" />,
-      services: [
-        "Hot Water Systems (Install & Repair)",
-        "General Gas Fitting",
-        "Gas Meter Relocations"
-      ]
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
@@ -96,9 +42,10 @@ export default function ServicesContent() {
       {/* SERVICES LIST (Alternating Layout) */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-24 md:space-y-32">
-          {categories.map((category, index) => {
+          {serviceCategories.map((category, index) => {
             // Determine if the image should be on the left or right
             const isEven = index % 2 === 0;
+            const Icon = ICONS[category.iconName];
 
             return (
               <div
@@ -111,7 +58,7 @@ export default function ServicesContent() {
                   {/* Decorative background shape */}
                   <div className={`absolute top-4 bottom-4 w-full bg-blue-100 rounded-3xl -z-10 ${isEven ? 'left-4' : 'right-4'}`} />
 
-                  <div className="relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white">
+                  <Link href={`/services/${category.slug}`} className="block relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white">
                     <CldImage
                       config={{ cloud: { cloudName: cloudName } }}
                       src={category.imageId}
@@ -121,16 +68,18 @@ export default function ServicesContent() {
                       className="object-cover transition-transform duration-700 hover:scale-105"
                     />
                     <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-lg text-blue-600">
-                      {category.icon}
+                      <Icon className="w-6 h-6" />
                     </div>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Content Side */}
                 <div className="w-full lg:w-1/2">
-                  <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
-                    {category.title}
-                  </h2>
+                  <Link href={`/services/${category.slug}`} className="inline-block">
+                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 hover:text-blue-600 transition-colors">
+                      {category.title}
+                    </h2>
+                  </Link>
                   <p className="text-lg text-slate-600 mb-10 leading-relaxed">
                     {category.desc}
                   </p>
@@ -149,7 +98,10 @@ export default function ServicesContent() {
                   </div>
 
                   {/* Quick CTA per section */}
-                  <div className="mt-8">
+                  <div className="mt-8 flex flex-wrap items-center gap-6">
+                    <Link href={`/services/${category.slug}`} className="inline-flex items-center gap-2 text-slate-900 font-bold hover:text-blue-600 transition-colors group">
+                      Full details on {category.title} <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Link>
                     <Link href="/quote" className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors group">
                       Need help with this? Get a quote <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>

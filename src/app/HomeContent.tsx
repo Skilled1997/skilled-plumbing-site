@@ -42,37 +42,43 @@ export default function HomePage() {
       title: "Home Renovations & Extensions",
       desc: "Complete plumbing overhauls for your new space and kitchen/bathroom extensions.",
       imageId: "IMG_1969_mxa5nx", // Tiled bathroom/renovation vibe
-      icon: <HomeIcon className="w-6 h-6" />
+      icon: <HomeIcon className="w-6 h-6" />,
+      href: "/services/home-renovations"
     },
     {
       title: "Leaking Taps",
       desc: "Quick, reliable fixes to save water and prevent property damage.",
       imageId: "leaking_tap_hi7bb5",
-      icon: <Droplet className="w-6 h-6" />
+      icon: <Droplet className="w-6 h-6" />,
+      href: "/services/hot-water-repairs"
     },
     {
       title: "Gas Fitting",
       desc: "Safe, certified gas installations and leak detection for your peace of mind.",
       imageId: "stove1_lxmx0r",
-      icon: <Flame className="w-6 h-6" />
+      icon: <Flame className="w-6 h-6" />,
+      href: "/services/gas-fitting"
     },
     {
       title: "Hot Water Systems",
       desc: "Repairs, replacements, and upgrades to ensure you're never without hot water.",
       imageId: "hotty3_gsobsn",
-      icon: <Settings className="w-6 h-6" />
+      icon: <Settings className="w-6 h-6" />,
+      href: "/services/hot-water-repairs"
     },
     {
       title: "Blocked Drains",
       desc: "Specialised equipment to clear stubborn blockages and prevent future issues.",
       imageId: "IMG_1194_cvyz0e",
-      icon: <Wrench className="w-6 h-6" />
+      icon: <Wrench className="w-6 h-6" />,
+      href: "/services/blocked-drains"
     },
     {
       title: "Commercial Plumbing",
       desc: "High-capacity gas fitting and plumbing solutions for local Perth businesses.",
       imageId: "commerical_gzrzhn",
-      icon: <Construction className="w-6 h-6" />
+      icon: <Construction className="w-6 h-6" />,
+      href: "/our-services"
     }
   ];
 
@@ -178,7 +184,7 @@ export default function HomePage() {
                   <p className="text-slate-600 text-sm leading-relaxed mb-6">
                     {service.desc}
                   </p>
-                  <Link href={`/our-services#${service.title.toLowerCase().replace(/ /g, '-')}`} className="text-xs font-bold uppercase tracking-wider text-blue-600 flex items-center gap-2 group-hover:gap-3 transition-all">
+                  <Link href={service.href} className="text-xs font-bold uppercase tracking-wider text-blue-600 flex items-center gap-2 group-hover:gap-3 transition-all">
                     Learn More <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
