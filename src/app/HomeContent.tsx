@@ -132,7 +132,7 @@ export default function HomePage() {
 
 <span className="flex items-center gap-2">
   <CheckCircle className="w-4 h-4 shrink-0 text-blue-400"/>
-  Only quality work completed to Australian Standards (AS/NZS 3500 & 5601)
+  Only quality work completed to Australian Standards
 </span>
             </div>
           </div>
