@@ -72,6 +72,7 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hot Water System Repairs & Replacement" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gas Fitting & Appliance Installation" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Blocked Drains" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "CCTV Drain Camera Inspections & Locating" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Leaking Taps" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Burst Pipe Repairs" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Home Renovations & Extensions" } },

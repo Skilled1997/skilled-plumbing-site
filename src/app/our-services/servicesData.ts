@@ -7,7 +7,7 @@ export type ServiceCategory = {
   desc: string;
   whyUs: string;
   imageId: string;
-  iconName: "home" | "wrench" | "flame";
+  iconName: "home" | "wrench" | "flame" | "camera";
   services: string[];
 };
 
@@ -48,6 +48,25 @@ export const serviceCategories: ServiceCategory[] = [
       "Blocked Showers",
       "Blocked Basins",
       "Blocked Sinks",
+    ],
+  },
+  {
+    slug: "cctv-drain-camera",
+    id: "cctv-drain-camera",
+    title: "CCTV Drain Camera Inspections & Locating",
+    metaTitle: "CCTV Drain Camera Inspections Perth",
+    metaDescription:
+      "CCTV drain camera inspections and pipe locating across Perth. Diagnose blockages, tree root intrusion and pipe damage without digging. Free quotes.",
+    desc: "See exactly what's happening underground before you dig. Our CCTV drain camera pinpoints blockages, cracks, tree root intrusion and misaligned pipes, and we can locate the exact position and depth of any pipe on your property.",
+    whyUs:
+      "Guessing where a pipe runs or what's actually blocking it leads to unnecessary digging and wasted cost. Camera inspection shows you the exact problem and its location first, so any repair work that follows is targeted and quoted accurately.",
+    imageId: "general_repairs_1_aoxt4g",
+    iconName: "camera",
+    services: [
+      "CCTV Drain Camera Inspections",
+      "Pipe & Drain Locating",
+      "Blockage & Tree Root Diagnosis",
+      "Pre-Purchase Drain Inspections",
     ],
   },
   {

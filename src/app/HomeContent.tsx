@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { CldImage } from "next-cloudinary";
-import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings } from 'lucide-react';
+import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Camera } from 'lucide-react';
 import { photos } from "@/data/photos";
 import { motion, AnimatePresence } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
@@ -72,6 +72,13 @@ export default function HomePage() {
       imageId: "IMG_1194_cvyz0e",
       icon: <Wrench className="w-6 h-6" />,
       href: "/services/blocked-drains"
+    },
+    {
+      title: "CCTV Drain Camera Inspections",
+      desc: "See exactly what's going on underground before you dig, and locate pipes precisely.",
+      imageId: "general_repairs_1_aoxt4g",
+      icon: <Camera className="w-6 h-6" />,
+      href: "/services/cctv-drain-camera"
     },
     {
       title: "Commercial Plumbing",
