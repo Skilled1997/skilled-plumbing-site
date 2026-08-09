@@ -54,8 +54,8 @@ export default function ContactContent() {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">Based in Perth</span>
-                  <span className="text-base font-medium">Servicing the Perth Metro & surrounding suburbs</span>
+                  <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">Based in Fremantle</span>
+                  <span className="text-base font-medium">Servicing Fremantle & surrounding suburbs</span>
                 </div>
               </div>
             </div>
