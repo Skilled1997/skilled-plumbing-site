@@ -196,7 +196,7 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       "Ground-Up Construction Plumbing (New Builds)",
       "Pre-Lay & Under-Slab Drainage",
-      "Main Drain Installation, Trenching & Excavation",
+      "Deep Sewer Installation",
       "High-Rise & Multi-Storey Apartment Plumbing",
       "Backflow Prevention (RPZD) Testing",
       "Fire Service Installation",
