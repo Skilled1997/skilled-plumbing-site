@@ -131,6 +131,24 @@ export default function HomePage() {
         {/* pt-40 on mobile ensures the text starts well below the 24-unit header */}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-20 lg:pt-32">
           <div className="max-w-3xl">
+            <a
+              href={googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mb-6 hover:opacity-80 transition-opacity"
+            >
+              <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <svg viewBox="0 0 24 24" className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" aria-label="Google">
+                <path fill="#4285F4" d="M23.52 12.273c0-.851-.076-1.669-.218-2.454H12v4.64h6.458c-.282 1.5-1.128 2.77-2.398 3.62v3.01h3.878c2.27-2.09 3.582-5.166 3.582-8.816z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.956-1.075 7.94-2.91l-3.878-3.01c-1.075.72-2.45 1.147-4.062 1.147-3.126 0-5.77-2.11-6.72-4.946H1.28v3.106C3.253 21.31 7.31 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.281A7.2 7.2 0 0 1 4.909 12c0-.792.136-1.56.371-2.281V6.613H1.28A11.996 11.996 0 0 0 0 12c0 1.937.464 3.77 1.28 5.387l3.999-3.106z"/>
+                <path fill="#EA4335" d="M12 4.773c1.76 0 3.343.605 4.588 1.794l3.441-3.44C17.951 1.19 15.236 0 12 0 7.31 0 3.253 2.69 1.28 6.613l3.999 3.106C6.23 6.884 8.874 4.773 12 4.773z"/>
+              </svg>
+            </a>
             <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
               Old School <span className="text-blue-400">Service.</span>
             </h1>
