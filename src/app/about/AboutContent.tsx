@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-import { ArrowRight, ShieldCheck, MapPin, Handshake, Wrench } from "lucide-react";
+import { ArrowRight, ShieldCheck, MapPin, Handshake, Wrench, Ruler } from "lucide-react";
 
 export default function AboutContent() {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
@@ -27,6 +27,11 @@ export default function AboutContent() {
       title: "8+ Years Experience",
       desc: "Hands-on plumbing and gas fitting experience on jobs of every size.",
       icon: <Wrench className="w-6 h-6" />,
+    },
+    {
+      title: "Meticulous Craftsmanship",
+      desc: "Known for a perfectionist approach and close attention to detail, reflected in neat, high-quality installations.",
+      icon: <Ruler className="w-6 h-6" />,
     },
   ];
 
@@ -59,9 +64,11 @@ export default function AboutContent() {
               <p>
                 Prior to entering the plumbing trade, Ren worked as a disability support worker,
                 an experience that instilled a strong focus on communication and genuine care for
-                the people he works with. This approach continues to define Skilled Plumbing
-                Services today, with honest advice, transparent pricing and quality workmanship
-                delivered on every job, regardless of scale.
+                the people he works with. That same care carries through into the work itself:
+                Ren is known for meticulous attention to detail and a perfectionist approach to
+                every installation, resulting in consistently neat, high-quality craftsmanship.
+                Combined with honest advice and transparent pricing, this defines every job he
+                undertakes, regardless of scale.
               </p>
               <p>
                 Skilled Plumbing Services is fully licensed and insured (PL11063 | GF20308), with
@@ -94,7 +101,7 @@ export default function AboutContent() {
         <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-10 text-center">
           Why Choose Skilled Plumbing Services
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {values.map((value) => (
             <div
               key={value.title}
