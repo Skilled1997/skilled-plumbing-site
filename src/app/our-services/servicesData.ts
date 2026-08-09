@@ -200,7 +200,7 @@ export const serviceCategories: ServiceCategory[] = [
       "High-Rise & Multi-Storey Apartment Plumbing",
       "Backflow Installation, Testing & Servicing (RPZD)",
       "Fire Service Installation",
-      "Hospital-Grade Thermostatic Mixing Valve (TMV) & Tapware Installation",
+      "Hospital-Grade Thermostatic Mixing Valve (TMV) & Tapware Installation/Testing",
       "Commercial Gas Fitting - Catering Equipment/Kitchens",
       "Hospitality & Retail Fit-Outs (Cafes, Bars, Butchers)",
       "Healthcare, Laboratory & Shopping Centre Plumbing",
