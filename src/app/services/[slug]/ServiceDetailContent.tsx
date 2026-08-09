@@ -61,7 +61,6 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
                       width={900}
                       height={1200}
                       crop="fit"
-                      gravity="auto"
                       priority={idx === 0}
                       sizes="(max-width: 640px) 50vw, 33vw"
                       alt={photo.alt}
