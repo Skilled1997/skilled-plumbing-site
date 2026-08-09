@@ -87,18 +87,6 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
               </div>
             )}
 
-            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 mb-10">
-              <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-6">Specialities</h2>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
-                {category.services.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                    <span className="text-slate-800 font-medium">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Why choose Skilled Plumbing Services</h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-10">{category.whyUs}</p>
 
@@ -110,8 +98,20 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
             </Link>
           </div>
 
-          {/* Sidebar: Other Services */}
+          {/* Sidebar: Specialities + Other Services */}
           <aside>
+            <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 mb-10">
+              <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-6">Specialities</h2>
+              <ul className="space-y-4">
+                {category.services.map((item, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                    <span className="text-slate-800 font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
             <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-6">Other Services</h2>
             <ul className="space-y-4">
               {relatedServices.map((rel) => (
