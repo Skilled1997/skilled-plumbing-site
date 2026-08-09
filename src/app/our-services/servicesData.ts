@@ -39,7 +39,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaTitle: "Blocked Drains Perth",
     metaDescription:
       "Fast, reliable blocked drain clearing across Perth. Blocked toilets, showers, basins and sinks cleared with specialised equipment. Free quotes.",
-    desc: "Fast, reliable response when you need it most. We use specialized equipment to clear stubborn blockages and secure burst pipes to prevent property damage.",
+    desc: "Fast, reliable response when you need it most. We only use the highest quality equipment to ensure all blockages are cleared with ease.",
     whyUs:
       "A blocked drain rarely stays a small problem for long. We carry drain clearing equipment on every vehicle so most blockages are cleared in a single visit, without guesswork.",
     imageId: "Drain_Cleaning_yytgkv",
@@ -81,7 +81,7 @@ export const serviceCategories: ServiceCategory[] = [
     desc: "Don't let minor leaks turn into major headaches. We handle all the day-to-day plumbing fixes to keep your home running efficiently.",
     whyUs:
       "Most hot water and general repair jobs are quoted honestly on the spot, with no more than what's needed to fix the problem properly. We stock common parts on the truck to get you sorted in one visit where possible.",
-    imageId: "hotty3_gsobsn",
+    imageId: "6F8045C7-B260-492E-8E8E-3CF72CF4C0A0_1_105_c_bbw5dd",
     iconName: "wrench",
     services: [
       "Leaking Taps",

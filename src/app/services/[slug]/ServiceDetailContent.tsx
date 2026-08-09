@@ -16,20 +16,7 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
     <div className="min-h-screen bg-[#FAFAFA]">
 
       {/* HEADER */}
-      <section className="relative pt-40 pb-20 bg-slate-900 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-100">
-          <CldImage
-            config={{ cloud: { cloudName: cloudName } }}
-            src={category.imageId}
-            fill
-            priority
-            sizes="100vw"
-            alt={category.imageAlt || category.title}
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent" />
-        </div>
-
+      <section className="relative pt-40 pb-16 bg-slate-900 text-white overflow-hidden">
         <div className="relative z-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav aria-label="Breadcrumb" className="text-xs uppercase tracking-widest text-slate-300 mb-6 flex items-center gap-2">
             <Link href="/" className="hover:text-white">Home</Link>
@@ -57,6 +44,21 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
 
           {/* Main Column */}
           <div className="md:col-span-2">
+            <div className="relative h-72 md:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 mb-10">
+              <CldImage
+                config={{ cloud: { cloudName: cloudName } }}
+                src={category.imageId}
+                width={1200}
+                height={600}
+                crop="fill"
+                gravity="auto"
+                priority
+                sizes="(max-width: 768px) 100vw, 66vw"
+                alt={category.imageAlt || category.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 mb-10">
               <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-6">Specialities</h2>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">

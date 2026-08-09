@@ -62,7 +62,7 @@ export default function HomePage() {
     {
       title: "Hot Water Systems",
       desc: "Repairs, replacements, and upgrades to ensure you're never without hot water.",
-      imageId: "hotty3_gsobsn",
+      imageId: "6F8045C7-B260-492E-8E8E-3CF72CF4C0A0_1_105_c_bbw5dd",
       icon: <Settings className="w-6 h-6" />,
       href: "/services/hot-water-repairs"
     },
@@ -142,11 +142,6 @@ export default function HomePage() {
 <span className="flex items-center gap-2">
   <CheckCircle className="w-4 h-4 shrink-0 text-blue-400"/>
   Transparent Processes From Start to Finish
-</span>
-
-<span className="flex items-center gap-2">
-  <CheckCircle className="w-4 h-4 shrink-0 text-blue-400"/>
-  Only quality work completed to Australian Standards
 </span>
             </div>
           </div>
