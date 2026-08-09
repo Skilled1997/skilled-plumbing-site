@@ -52,9 +52,9 @@ export default function AboutContent() {
               <p>
                 Skilled Plumbing Services is led by Ren, a licensed plumber and gas fitter with
                 over eight years of trade experience across Perth and the southern suburbs. Every
-                job, from a leaking tap to a full commercial fit-out, is carried out personally by
-                Ren, rather than being outsourced to a call centre or a rotating team of
-                subcontractors.
+                job, from a leaking tap to a full commercial fit-out, is completed personally by
+                Ren, ensuring consistent quality and direct accountability from quote to
+                completion.
               </p>
               <p>
                 Prior to entering the plumbing trade, Ren worked as a disability support worker,
