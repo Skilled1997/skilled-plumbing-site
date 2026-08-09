@@ -194,7 +194,7 @@ export const serviceCategories: ServiceCategory[] = [
     imageId: "commerical_gzrzhn",
     iconName: "construction",
     services: [
-      "Pre-Lay & Under-Slab Drainage",
+      "Sewer & Stormwater Pre-Lay & Elevated Drainage Installation",
       "Deep Sewer Installation",
       "Carpark, Stormwater & Civils",
       "High-Rise & Multi-Storey Apartment Plumbing",
