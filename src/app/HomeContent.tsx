@@ -101,14 +101,14 @@ export default function HomePage() {
       text: "Skilled Plumbing Services was able to help me with a damaged water pipe issue I had. Super professional and efficient at fixing this for us. Would highly recommend to anyone in need of his services!",
     },
     {
-      name: "Neha Fatima",
-      timeAgo: "a month ago",
-      text: "Amazing experience with Skilled Plumbing Services! Super friendly, and showed up right on time. Professional, knowledgeable, and made the whole process easy.",
-    },
-    {
       name: "Michael Cronan",
       timeAgo: "2 months ago",
       text: "Would highly recommend Skilled Plumbing Services. Very professional, friendly, efficient and always left the areas clean and tidy. All work was completed to a very high standard!",
+    },
+    {
+      name: "Priscila Petrelli",
+      timeAgo: "2 days ago",
+      text: "We couldn't be happier with the service! He replaced our toilet and did an amazing job. Very professional, punctual, and the quality of the work was excellent. Everything was left clean and working perfectly. Highly recommend!",
     },
   ];
 
