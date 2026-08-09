@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { CldImage } from "next-cloudinary";
-import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Camera } from 'lucide-react';
+import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Camera, Star } from 'lucide-react';
 import { photos } from "@/data/photos";
 import { motion, AnimatePresence } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
@@ -90,6 +90,26 @@ export default function HomePage() {
       icon: <Construction className="w-6 h-6" />,
       href: "/our-services"
     }
+  ];
+
+  const googleReviewUrl = "https://www.google.com/maps/place/?q=place_id:ChIJ6fbDOctNuggRkqNn7dK-FO4";
+
+  const testimonials = [
+    {
+      name: "Benjamin Handcock",
+      timeAgo: "2 months ago",
+      text: "Skilled Plumbing Services was able to help me with a damaged water pipe issue I had. Super professional and efficient at fixing this for us. Would highly recommend to anyone in need of his services!",
+    },
+    {
+      name: "Neha Fatima",
+      timeAgo: "a month ago",
+      text: "Amazing experience with Skilled Plumbing Services! Super friendly, and showed up right on time. Professional, knowledgeable, and made the whole process easy.",
+    },
+    {
+      name: "Michael Cronan",
+      timeAgo: "2 months ago",
+      text: "Would highly recommend Skilled Plumbing Services. Very professional, friendly, efficient and always left the areas clean and tidy. All work was completed to a very high standard!",
+    },
   ];
 
   return (
@@ -206,6 +226,53 @@ export default function HomePage() {
           <Link href="/our-services" className="inline-flex items-center gap-2 text-blue-600 font-bold">
             See all our services <ArrowRight className="w-5 h-5" />
           </Link>
+        </div>
+      </section>
+
+      {/* GOOGLE REVIEWS */}
+      <section className="py-24 bg-white border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Customer Reviews</h2>
+            <h3 className="text-4xl font-bold text-slate-900 leading-tight mb-6">What Our Customers Say</h3>
+            <div className="inline-flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4">
+              <span className="text-2xl font-extrabold text-slate-900">5.0</span>
+              <span className="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                ))}
+              </span>
+              <span className="text-sm text-slate-500 font-medium">from 35 Google reviews</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((t, idx) => (
+              <div key={idx} className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <p className="text-slate-700 leading-relaxed mb-6">&ldquo;{t.text}&rdquo;</p>
+                <div className="flex items-center justify-between">
+                  <span className="font-bold text-slate-900">{t.name}</span>
+                  <span className="text-xs text-slate-400">{t.timeAgo}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href={googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-md transition duration-200 active:scale-[0.98]"
+            >
+              Read All Reviews on Google <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
         </div>
       </section>
 
