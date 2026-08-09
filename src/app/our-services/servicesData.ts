@@ -204,7 +204,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Commercial Gas Fitting & Appliance Installation",
       "Hospitality & Retail Fit-Outs (Cafes, Bars, Butchers)",
       "Healthcare, Laboratory & Shopping Centre Plumbing",
-      "Trade Waste & Grease Trap Servicing",
+      "Trade Waste & Grease Trap Installations",
       "Strata & Body Corporate Plumbing Maintenance",
       "Commercial Hot Water Systems",
       "Commercial Drain Clearing & CCTV Inspections",
