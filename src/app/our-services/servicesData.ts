@@ -198,7 +198,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Deep Sewer Installation",
       "Carpark Stormwater Installation & Civils",
       "High-Rise & Multi-Storey Apartment Plumbing",
-      "Backflow Prevention (RPZD) Testing",
+      "Backflow Installation, Testing & Servicing (RPZD)",
       "Fire Service Installation",
       "Hospital-Grade Thermostatic Mixing Valve (TMV) & Tapware Installation",
       "Commercial Gas Fitting & Appliance Installation",
