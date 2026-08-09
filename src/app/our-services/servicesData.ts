@@ -42,8 +42,8 @@ export const serviceCategories: ServiceCategory[] = [
     desc: "Fast, reliable response when you need it most. We only use the highest quality equipment to ensure all blockages are cleared with ease.",
     whyUs:
       "A blocked drain rarely stays a small problem for long. We carry drain clearing equipment on every vehicle so most blockages are cleared in a single visit, without guesswork.",
-    imageId: "Drain_Cleaning_yytgkv",
-    imageAlt: "Unblocking a urinal waste pipe in a plumbing duct",
+    imageId: "IMG_1194_cvyz0e",
+    imageAlt: "Drain clearing machine set up ready to clear a blocked drain",
     iconName: "wrench",
     services: [
       "Blocked Toilets",
