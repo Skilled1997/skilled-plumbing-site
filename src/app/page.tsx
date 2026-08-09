@@ -20,12 +20,32 @@ const localBusinessSchema = {
   image: "https://skilledplumbingservices.com/og-image.png",
   description:
     "Licensed plumber serving Fremantle, southern suburbs and all of Perth, WA. Hot water systems, gas fitting, blocked drains, renovations and more. Licence PL11063 | GF20308.",
+  telephone: "+61448803947",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Fremantle",
+    addressLocality: "Winthrop",
     addressRegion: "WA",
-    postalCode: "6160",
+    postalCode: "6150",
     addressCountry: "AU",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: -32.0522,
+    longitude: 115.8297,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "07:00",
+    closes: "17:00",
   },
   areaServed: [
     "Fremantle",
@@ -48,6 +68,7 @@ const localBusinessSchema = {
     "Cockburn Central",
     "Canning Vale",
     "Murdoch",
+    "Winthrop",
     "Kardinya",
     "Melville",
     "Myaree",
