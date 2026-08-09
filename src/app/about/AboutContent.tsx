@@ -9,8 +9,8 @@ export default function AboutContent() {
 
   const values = [
     {
-      title: "Licensed & Insured",
-      desc: "Fully licensed plumber and gas fitter (PL11063 | GF20308), so every job is compliant and covered.",
+      title: "$20M Public Liability",
+      desc: "Fully licensed plumber and gas fitter (PL11063 | GF20308) with $20 million public liability cover.",
       icon: <ShieldCheck className="w-6 h-6" />,
     },
     {
@@ -62,9 +62,10 @@ export default function AboutContent() {
                 transparent pricing and quality workmanship on every job, no matter the size.
               </p>
               <p>
-                Fully licensed and insured (PL11063 | GF20308), Skilled Plumbing Services proudly
-                serves homeowners, renters, real estate agents, strata and commercial clients
-                across Fremantle, the southern suburbs and greater Perth.
+                Fully licensed and insured (PL11063 | GF20308), with $20 million in public
+                liability cover, Skilled Plumbing Services proudly serves homeowners, renters,
+                real estate agents, strata and commercial clients across Fremantle, the southern
+                suburbs and greater Perth.
               </p>
               <p className="font-semibold text-slate-900">— Ren, Licensed Plumber &amp; Founder</p>
             </div>
