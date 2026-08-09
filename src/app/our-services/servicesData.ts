@@ -117,7 +117,7 @@ export const serviceCategories: ServiceCategory[] = [
       {
         question: "How quickly can you respond to a blocked drain?",
         answer:
-          "Blocked drains are treated as a priority. We carry drain clearing and CCTV equipment on every vehicle, so most jobs are diagnosed and fixed in a single visit.",
+          "Blocked drains are treated as a priority. We carry drain clearing and CCTV equipment onboard, so most jobs are diagnosed and fixed in a single visit.",
       },
     ],
   },
