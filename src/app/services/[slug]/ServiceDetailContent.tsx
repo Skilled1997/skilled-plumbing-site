@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-import { CheckCircle2, Home, Wrench, Flame, Camera, Construction, ArrowRight } from "lucide-react";
+import { CheckCircle2, Home, Wrench, Flame, Camera, Construction, ArrowRight, ChevronDown } from "lucide-react";
 import { ServiceCategory, serviceCategories } from "../../our-services/servicesData";
 
 const ICONS = { home: Home, wrench: Wrench, flame: Flame, camera: Camera, construction: Construction };
@@ -131,6 +131,27 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
           </aside>
         </div>
       </section>
+
+      {/* FAQ SECTION */}
+      {category.faqs && category.faqs.length > 0 && (
+        <section className="pb-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {category.faqs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="group bg-white rounded-2xl border border-slate-100 shadow-sm p-6"
+              >
+                <summary className="flex items-center justify-between gap-4 cursor-pointer font-semibold text-slate-900 list-none [&::-webkit-details-marker]:hidden">
+                  {faq.question}
+                  <ChevronDown className="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-200 group-open:rotate-180" />
+                </summary>
+                <p className="text-slate-600 mt-4 leading-relaxed">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* BOTTOM CTA BANNER */}
       <section className="bg-slate-900 py-20 border-t border-slate-800">

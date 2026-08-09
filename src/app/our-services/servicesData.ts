@@ -11,6 +11,7 @@ export type ServiceCategory = {
   iconName: "home" | "wrench" | "flame" | "camera" | "construction";
   services: string[];
   gallery?: { imageId: string; alt: string }[];
+  faqs?: { question: string; answer: string }[];
 };
 
 export const serviceCategories: ServiceCategory[] = [
@@ -35,6 +36,28 @@ export const serviceCategories: ServiceCategory[] = [
       "New Kitchen Plumbing",
       "Laundry Plumbing Installations",
       "Dishwasher & Washing Machine Plumbing",
+    ],
+    faqs: [
+      {
+        question: "Do you handle the plumbing for a full bathroom renovation, or just parts of it?",
+        answer:
+          "We handle the complete plumbing scope for a renovation — rough-in, fixture installation, wall chasing and final fit-off — working alongside your builder or other trades from start to finish.",
+      },
+      {
+        question: "Can you help plan pipe placement before my renovation starts?",
+        answer:
+          "Yes. We work with your builder or designer early on to plan pipe runs and rough-in positions before walls close up, avoiding costly rework later in the build.",
+      },
+      {
+        question: "Do I need council approval for renovation plumbing work?",
+        answer:
+          "Most internal renovation plumbing doesn't require separate council approval, but changes affecting sewer connections or structural work may need building approval. We can advise on what applies to your job during the quote.",
+      },
+      {
+        question: "How far in advance should I book a renovation plumber?",
+        answer:
+          "As early as possible once your renovation timeline is set, ideally before demolition, so plumbing rough-in fits smoothly into the build schedule.",
+      },
     ],
   },
   {
@@ -73,6 +96,28 @@ export const serviceCategories: ServiceCategory[] = [
       {
         imageId: "IMG_1194_cvyz0e",
         alt: "Drain clearing machine set up ready to clear a blocked drain",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I know if my drain is blocked or just slow?",
+        answer:
+          "Signs include gurgling sounds, water pooling around drains, bad odours, or multiple fixtures draining slowly at once. If more than one drain is affected, it's usually a blockage further down the line rather than an issue with a single fixture.",
+      },
+      {
+        question: "Can you tell what's causing a blockage without digging?",
+        answer:
+          "Yes. We use CCTV drain cameras to inspect inside the pipe first, so we can identify tree roots, pipe damage or debris before recommending any digging.",
+      },
+      {
+        question: "Do you provide a copy of the CCTV footage or report?",
+        answer:
+          "Yes, footage and findings can be provided, which is particularly useful for pre-purchase inspections or insurance claims.",
+      },
+      {
+        question: "How quickly can you respond to a blocked drain?",
+        answer:
+          "Blocked drains are treated as a priority. We carry drain clearing and CCTV equipment on every vehicle, so most jobs are diagnosed and fixed in a single visit.",
       },
     ],
   },
@@ -120,6 +165,28 @@ export const serviceCategories: ServiceCategory[] = [
         alt: "Rheem gas continuous flow hot water unit with copper pipework",
       },
     ],
+    faqs: [
+      {
+        question: "My hot water system has stopped working — should I repair or replace it?",
+        answer:
+          "It depends on the age, system type and fault. We inspect the unit and give honest advice on whether a repair is cost-effective or replacement is the better long-term option.",
+      },
+      {
+        question: "How long does a hot water system replacement take?",
+        answer:
+          "Most standard replacements are completed within a day, though continuous flow or heat pump installs in a new location may take longer.",
+      },
+      {
+        question: "What size hot water system do I need for my household?",
+        answer:
+          "This depends on household size, usage and system type. We recommend the right size and system — continuous flow, heat pump, gas or electric — during your quote.",
+      },
+      {
+        question: "Do you work on all hot water system brands?",
+        answer:
+          "Yes, we service and repair all major brands and system types, so you get honest advice rather than a sales pitch for one particular product.",
+      },
+    ],
   },
   {
     slug: "maintenance-repairs",
@@ -142,6 +209,28 @@ export const serviceCategories: ServiceCategory[] = [
       "Garden Tap Repairs & Replacement",
       "Toilet Cistern Repairs",
       "Real Estate & Rental Property Maintenance",
+    ],
+    faqs: [
+      {
+        question: "Do you charge a call-out fee for small repairs?",
+        answer:
+          "We provide upfront, transparent pricing before any work begins — ask us about the call-out and pricing structure when you book.",
+      },
+      {
+        question: "Can you fix a leaking tap in one visit?",
+        answer:
+          "Most leaking taps and general repairs are completed in a single visit, as we carry common parts on the truck.",
+      },
+      {
+        question: "Do you handle maintenance for rental properties on behalf of real estate agents?",
+        answer:
+          "Yes, we regularly work with real estate agents, landlords and property managers on rental property maintenance and repairs.",
+      },
+      {
+        question: "What's the difference between a service call and an emergency repair?",
+        answer:
+          "A service call is scheduled maintenance or a non-urgent repair, while an emergency repair — such as a burst pipe — is prioritised for a faster response.",
+      },
     ],
   },
   {
@@ -180,6 +269,28 @@ export const serviceCategories: ServiceCategory[] = [
         alt: "Testing gas pressure on a cooktop gas line under the cabinet",
       },
     ],
+    faqs: [
+      {
+        question: "Do I need a licensed gas fitter for appliance installation?",
+        answer:
+          "Yes. Gas fitting work in WA must be carried out by a licensed gas fitter to meet Australian standards and ensure your safety and warranty coverage.",
+      },
+      {
+        question: "Can you relocate my gas meter?",
+        answer:
+          "Yes, gas meter relocations are one of our standard services — we handle the application and installation to meet compliance requirements.",
+      },
+      {
+        question: "Do you provide a compliance certificate after gas work?",
+        answer:
+          "Yes, a gas compliance certificate is provided for applicable work, giving you documented proof the installation meets Australian standards.",
+      },
+      {
+        question: "How do I know if I have a gas leak?",
+        answer:
+          "Signs include a rotten-egg smell, hissing near gas fittings, or a higher-than-usual gas bill. If you suspect a leak, turn off the gas supply if safe to do so and contact us immediately.",
+      },
+    ],
   },
   {
     slug: "commercial-plumbing",
@@ -209,6 +320,28 @@ export const serviceCategories: ServiceCategory[] = [
       "Commercial Hot Water Systems",
       "Commercial Drain Clearing & CCTV Inspections",
       "Remote Area Works (Mining)",
+    ],
+    faqs: [
+      {
+        question: "How often does an RPZD backflow prevention device need testing?",
+        answer:
+          "Backflow prevention devices generally require testing annually to remain compliant. We can set up scheduled testing so you never miss a due date.",
+      },
+      {
+        question: "Do you work on new construction sites, or only existing buildings?",
+        answer:
+          "Both. We handle ground-up construction plumbing — pre-lays, trenched drainage and civil works — as well as maintenance and fit-outs for existing commercial buildings.",
+      },
+      {
+        question: "Can you provide compliance documentation for strata or commercial clients?",
+        answer:
+          "Yes, we provide the required paperwork for backflow and fire service testing, which is often requested by strata managers, real estate agents and building compliance officers.",
+      },
+      {
+        question: "Do you take on small commercial jobs, or only larger projects?",
+        answer:
+          "We take on jobs of all sizes, from a single café fit-out to larger construction and civil works. Get in touch for a free quote regardless of scale.",
+      },
     ],
   },
 ];
