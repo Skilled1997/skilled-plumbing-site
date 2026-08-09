@@ -69,7 +69,8 @@ export const serviceCategories: ServiceCategory[] = [
     desc: "See exactly what's happening underground before you dig. Our CCTV drain camera pinpoints blockages, cracks, tree root intrusion and misaligned pipes, and we can locate the exact position and depth of any pipe on your property.",
     whyUs:
       "Guessing where a pipe runs or what's actually blocking it leads to unnecessary digging and wasted cost. Camera inspection shows you the exact problem and its location first, so any repair work that follows is targeted and quoted accurately.",
-    imageId: "general_repairs_1_aoxt4g",
+    imageId: "Drain_Camera_u6ns9r",
+    imageAlt: "Skilled Plumbing Services technician setting up a CCTV drain camera inspection",
     iconName: "camera",
     services: [
       "CCTV Drain Camera Inspections",

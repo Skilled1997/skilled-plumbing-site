@@ -77,7 +77,8 @@ export default function HomePage() {
     {
       title: "CCTV Drain Camera Inspections",
       desc: "See exactly what's going on underground before you dig, and locate pipes precisely.",
-      imageId: "general_repairs_1_aoxt4g",
+      imageId: "Drain_Camera_u6ns9r",
+      imageAlt: "Skilled Plumbing Services technician setting up a CCTV drain camera inspection",
       icon: <Camera className="w-6 h-6" />,
       href: "/services/cctv-drain-camera"
     },
