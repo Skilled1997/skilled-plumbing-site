@@ -251,6 +251,7 @@ export const serviceCategories: ServiceCategory[] = [
       "General Gas Fitting",
       "Gas Meter Relocations",
       "Gas Cooktop Installation & Replacement",
+      "Gas Bayonet Installation",
       "Gas Leak Detection & Repairs",
       "Gas Heater Installation & Servicing",
       "Gas Appliance Compliance Certificates",
