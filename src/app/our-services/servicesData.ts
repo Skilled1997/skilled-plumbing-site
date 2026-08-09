@@ -201,7 +201,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Backflow Installation, Testing & Servicing (RPZD)",
       "Fire Service Installation",
       "Hospital-Grade Thermostatic Mixing Valve (TMV) & Tapware Installation",
-      "Commercial Gas Fitting & Appliance Installation",
+      "Commercial Gas Fitting - Catering Equipment/Kitchens",
       "Hospitality & Retail Fit-Outs (Cafes, Bars, Butchers)",
       "Healthcare, Laboratory & Shopping Centre Plumbing",
       "Trade Waste & Grease Trap Installations",
