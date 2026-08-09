@@ -50,7 +50,7 @@ export default function HomePage() {
       desc: "Quick, reliable fixes to save water and prevent property damage.",
       imageId: "leaking_tap_hi7bb5",
       icon: <Droplet className="w-6 h-6" />,
-      href: "/services/hot-water-repairs"
+      href: "/services/maintenance-repairs"
     },
     {
       title: "Gas Fitting",
