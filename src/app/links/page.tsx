@@ -16,11 +16,11 @@ const links = [
     // Using the official Instagram icon
     icon: <SiInstagram className="w-4 h-4" /> 
   },
-  { 
-    label: "View Portfolio", 
-    sub: "Explore our recent projects",
-    href: "/gallery", 
-    icon: <ArrowRight className="w-4 h-4" /> 
+  {
+    label: "About Us",
+    sub: "Meet Ren & Skilled Plumbing Services",
+    href: "/about",
+    icon: <ArrowRight className="w-4 h-4" />
   },
   { 
     label: "Request a Quote", 

@@ -116,10 +116,10 @@ async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     {/* Action Buttons */}
     <div className="flex flex-col gap-3">
       <Link
-        href="/gallery"
+        href="/about"
         className="w-full bg-slate-900 text-white py-4 rounded-2xl font-bold shadow-lg hover:bg-slate-800 transition-all active:scale-[0.98] block"
       >
-        View our work
+        About us
       </Link>
 
       <button

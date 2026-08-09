@@ -109,7 +109,7 @@ export default function HomePage() {
 
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center bg-slate-900 text-white overflow-hidden">
-        {/* TOP SPACER: Matches your Gallery page logic to clear the fixed header */}
+        {/* TOP SPACER: Clears the fixed header */}
         <div className="absolute top-0 left-0 right-0 h-24 z-30" />
 
         <div className="absolute inset-0 z-0">
@@ -139,8 +139,8 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link href="/gallery" className="inline-flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
-                View Our Work
+              <Link href="/about" className="inline-flex justify-center items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
+                About Us
               </Link>
               <Link href="/our-services" className="inline-flex justify-center items-center bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-10 rounded-xl backdrop-blur-md transition duration-300 border border-white/20 active:scale-95">
                 Our Services
