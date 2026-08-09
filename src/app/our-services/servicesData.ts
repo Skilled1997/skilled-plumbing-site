@@ -127,7 +127,7 @@ export const serviceCategories: ServiceCategory[] = [
     title: "Maintenance Plumbing & Repairs",
     metaTitle: "Plumbing Maintenance & Repairs Fremantle & Perth",
     metaDescription:
-      "General plumbing repairs and maintenance across Fremantle and Perth. Leaking taps, toilet repairs, reticulation fixes and burst pipes. Free quotes.",
+      "General plumbing repairs and maintenance across Fremantle and Perth. Leaking taps, toilet repairs, reticulation fixes, burst pipes and real estate property maintenance. Free quotes.",
     desc: "Don't let minor leaks turn into major headaches. We handle all the day-to-day plumbing fixes to keep Fremantle and Perth homes running efficiently.",
     whyUs:
       "Most repair jobs are quoted honestly on the spot, with no more than what's needed to fix the problem properly. We stock common parts on the truck to get you sorted in one visit where possible.",
@@ -141,6 +141,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Burst Pipe Repairs",
       "Garden Tap Repairs & Replacement",
       "Toilet Cistern Repairs",
+      "Real Estate & Rental Property Maintenance",
     ],
   },
   {
@@ -184,9 +185,9 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "commercial-plumbing",
     id: "commercial-plumbing",
     title: "Commercial Plumbing",
-    metaTitle: "Commercial Plumbing Fremantle & Perth | RPZD Backflow Testing",
+    metaTitle: "Commercial Plumbing Fremantle & Perth | RPZD Testing & Fire Services",
     metaDescription:
-      "Commercial plumbing and RPZD backflow testing for Fremantle and Perth businesses. Trade waste, grease traps, strata maintenance and commercial gas fitting. Free quotes.",
+      "Commercial plumbing, RPZD backflow testing, fire service installation and hospital-grade TMVs for Fremantle and Perth businesses. Trade waste, strata maintenance and gas fitting. Free quotes.",
     desc: "High-capacity gas fitting and plumbing solutions for Fremantle and Perth businesses, from routine backflow compliance testing to full commercial fit-outs.",
     whyUs:
       "Businesses can't afford plumbing downtime or compliance gaps. We handle scheduled backflow testing, strata maintenance and commercial repairs with minimal disruption to your operations, and provide the paperwork you need for compliance records.",
@@ -194,6 +195,8 @@ export const serviceCategories: ServiceCategory[] = [
     iconName: "construction",
     services: [
       "Backflow Prevention (RPZD) Testing",
+      "Fire Service Installation",
+      "Hospital-Grade Thermostatic Mixing Valve (TMV) & Tapware Installation",
       "Commercial Gas Fitting & Appliance Installation",
       "Trade Waste & Grease Trap Servicing",
       "Strata & Body Corporate Plumbing Maintenance",
