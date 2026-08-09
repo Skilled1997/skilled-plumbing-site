@@ -208,7 +208,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Strata & Body Corporate Plumbing Maintenance",
       "Commercial Hot Water Systems",
       "Commercial Drain Clearing & CCTV Inspections",
-      "Water Meter & Isolation Valve Servicing",
+      "Remote Area Works (Mining)",
     ],
   },
 ];
