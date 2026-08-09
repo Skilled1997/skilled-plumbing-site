@@ -77,7 +77,7 @@ export default function HomePage() {
     },
     {
       title: "Commercial Plumbing",
-      desc: "High-capacity gas fitting and plumbing solutions for local Perth businesses.",
+      desc: "Ground-up construction plumbing and commercial solutions for Perth builders and businesses.",
       imageId: "commerical_gzrzhn",
       icon: <Construction className="w-6 h-6" />,
       href: "/services/commercial-plumbing"
