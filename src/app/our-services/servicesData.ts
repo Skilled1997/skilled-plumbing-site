@@ -196,7 +196,7 @@ export const serviceCategories: ServiceCategory[] = [
     services: [
       "Sewer & Stormwater Pre-Lay & Elevated Drainage Installation",
       "Deep Sewer Installation",
-      "Carpark, Stormwater & Civils",
+      "Carpark Stormwater Installation & Civils",
       "High-Rise & Multi-Storey Apartment Plumbing",
       "Backflow Prevention (RPZD) Testing",
       "Fire Service Installation",
