@@ -194,9 +194,9 @@ export const serviceCategories: ServiceCategory[] = [
     imageId: "commerical_gzrzhn",
     iconName: "construction",
     services: [
-      "Ground-Up Construction Plumbing (New Builds)",
       "Pre-Lay & Under-Slab Drainage",
       "Deep Sewer Installation",
+      "Carpark, Stormwater & Civils",
       "High-Rise & Multi-Storey Apartment Plumbing",
       "Backflow Prevention (RPZD) Testing",
       "Fire Service Installation",
