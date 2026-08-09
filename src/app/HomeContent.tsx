@@ -167,14 +167,17 @@ export default function HomePage() {
             const photo = getPhoto(service.imageId);
             return (
               <div key={idx} className="group bg-white rounded-2xl border border-slate-100 shadow-[0_10px_30px_rgba(0,0,0,0.04)] overflow-hidden transition-all duration-300 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:-translate-y-1">
-                <div className="h-64 relative overflow-hidden bg-slate-100">
+                <div className="h-80 relative overflow-hidden bg-slate-100">
                   <CldImage
                     config={{ cloud: { cloudName: cloudName } }}
                     src={service.imageId}
-                    fill
+                    width={800}
+                    height={640}
+                    crop="fill"
+                    gravity="auto"
                     alt={service.imageAlt || service.title}
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-0"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-0"
                     onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
                   />
 
