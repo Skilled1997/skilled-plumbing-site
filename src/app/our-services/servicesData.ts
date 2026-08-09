@@ -190,7 +190,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Ground-up construction plumbing for Fremantle and Perth builders, plus RPZD backflow testing, fire services and commercial fit-outs. High-rise, hospitality and healthcare plumbing. Free quotes.",
     desc: "Ground-up construction plumbing, high-capacity gas fitting and full-service commercial solutions for Fremantle and Perth builders and businesses — from pre-lays and trenched drainage to backflow compliance testing and fit-outs.",
     whyUs:
-      "Skilled Plumbing Services works across the full lifecycle of a commercial project, from pre-lays and trenched drain installation on a new build through to scheduled backflow testing and ongoing maintenance. Builders can bring us in for ground-up construction plumbing, not just the finishing trades, with capability across high-rise apartments, hospitality, healthcare, laboratory and retail fit-outs. Businesses also get minimal disruption to daily operations and the compliance paperwork required for backflow and fire service testing.",
+      "Skilled Plumbing Services supports commercial projects across their full lifecycle, from pre-lay and trenched drain installation on new builds through to scheduled compliance testing and ongoing maintenance. Our capability spans high-rise apartments, hospitality, healthcare, laboratory and retail fit-outs, allowing builders to engage us from the ground-up stage rather than the finishing trades alone. For existing businesses, we prioritise minimal disruption to daily operations and provide the compliance documentation required for backflow and fire service testing.",
     imageId: "commerical_gzrzhn",
     iconName: "construction",
     services: [
