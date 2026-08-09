@@ -11,6 +11,10 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
   const Icon = ICONS[category.iconName];
   const relatedServices = serviceCategories.filter((c) => c.slug !== category.slug);
+  const allPhotos = [
+    { imageId: category.imageId, alt: category.imageAlt || category.title },
+    ...(category.gallery || []),
+  ];
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
@@ -44,20 +48,44 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
 
           {/* Main Column */}
           <div className="md:col-span-2">
-            <div className="relative h-80 md:h-[480px] w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 mb-10">
-              <CldImage
-                config={{ cloud: { cloudName: cloudName } }}
-                src={category.imageId}
-                width={1200}
-                height={900}
-                crop="fill"
-                gravity="auto"
-                priority
-                sizes="(max-width: 768px) 100vw, 66vw"
-                alt={category.imageAlt || category.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
+            {allPhotos.length > 1 ? (
+              <div className="grid grid-cols-2 gap-4 mb-10">
+                {allPhotos.map((photo, idx) => (
+                  <div
+                    key={photo.imageId}
+                    className="relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100"
+                  >
+                    <CldImage
+                      config={{ cloud: { cloudName: cloudName } }}
+                      src={photo.imageId}
+                      width={900}
+                      height={1200}
+                      crop="fit"
+                      gravity="auto"
+                      priority={idx === 0}
+                      sizes="(max-width: 640px) 50vw, 33vw"
+                      alt={photo.alt}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="relative h-80 md:h-[480px] w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 mb-10">
+                <CldImage
+                  config={{ cloud: { cloudName: cloudName } }}
+                  src={category.imageId}
+                  width={1200}
+                  height={900}
+                  crop="fill"
+                  gravity="auto"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 66vw"
+                  alt={category.imageAlt || category.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+            )}
 
             <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 mb-10">
               <h2 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-6">Specialities</h2>

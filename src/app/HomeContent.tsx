@@ -55,7 +55,8 @@ export default function HomePage() {
     {
       title: "Gas Fitting",
       desc: "Safe, certified gas installations and leak detection for your peace of mind.",
-      imageId: "stove1_lxmx0r",
+      imageId: "E52DB188-0675-41F7-A00D-5CBE2EA8C838_1_105_c_ow3kfw",
+      imageAlt: "Newly installed gas cooktop with rangehood",
       icon: <Flame className="w-6 h-6" />,
       href: "/services/gas-fitting"
     },

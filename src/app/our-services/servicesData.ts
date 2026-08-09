@@ -10,6 +10,7 @@ export type ServiceCategory = {
   imageAlt?: string;
   iconName: "home" | "wrench" | "flame" | "camera";
   services: string[];
+  gallery?: { imageId: string; alt: string }[];
 };
 
 export const serviceCategories: ServiceCategory[] = [
@@ -115,7 +116,8 @@ export const serviceCategories: ServiceCategory[] = [
     desc: "Gas can be dangerous if appliances are not installed appropriately and by a qualified gas fitter. We install ALL gas appliances as per the manufacturer's guidelines and the Australian standards. This ensures that every single customer is safe when using their new appliance and can have absolute peace of mind that no corners were cut in the process.",
     whyUs:
       "Gas work is licensed for a reason. Every installation is certified and compliant, so you're covered by insurance and by the manufacturer's warranty.",
-    imageId: "gas5_zvufds",
+    imageId: "04B541F2-3159-4786-BA27-7A33486AC600_1_105_c_bfqsiu",
+    imageAlt: "Testing gas pressure on a hot water system with a digital gauge",
     iconName: "flame",
     services: [
       "Hot Water Systems (Install & Repair)",
@@ -125,6 +127,20 @@ export const serviceCategories: ServiceCategory[] = [
       "Gas Leak Detection & Repairs",
       "Gas Heater Installation & Servicing",
       "Gas Appliance Compliance Certificates",
+    ],
+    gallery: [
+      {
+        imageId: "53B48619-769E-45D9-AE1E-8620CAE716B5_1_105_c_azk9dh",
+        alt: "New copper gas pipe outlet installed on a wall",
+      },
+      {
+        imageId: "IMG_4313_qdudkz",
+        alt: "Digging a trench for a new gas line installation near the gas meter",
+      },
+      {
+        imageId: "F19FDD26-BD51-4F9A-AC08-A79DB215E81D_1_105_c_nt6edv",
+        alt: "Testing gas pressure on a cooktop gas line under the cabinet",
+      },
     ],
   },
 ];
