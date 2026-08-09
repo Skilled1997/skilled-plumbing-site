@@ -8,7 +8,7 @@ export type ServiceCategory = {
   whyUs: string;
   imageId: string;
   imageAlt?: string;
-  iconName: "home" | "wrench" | "flame" | "camera";
+  iconName: "home" | "wrench" | "flame" | "camera" | "construction";
   services: string[];
   gallery?: { imageId: string; alt: string }[];
 };
@@ -18,9 +18,9 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "home-renovations",
     id: "installations-renovations",
     title: "Renovations & Home Extensions",
-    metaTitle: "Home Renovation Plumbing Perth",
+    metaTitle: "Home Renovation Plumbing Perth & Fremantle",
     metaDescription:
-      "Plumbing for bathroom, kitchen and laundry renovations, extensions and new builds across Perth. Vanity installs, wall chasing and concrete cutting. Free quotes.",
+      "Plumbing for bathroom, kitchen and laundry renovations, extensions and new builds across Fremantle and Perth. Vanity installs, wall chasing and concrete cutting. Free quotes.",
     desc: "From minor bathroom updates to complete structural plumbing for new builds. We work with you to ensure perfect placement and flawless finishes.",
     whyUs:
       "Renovations depend on getting rough-in plumbing right the first time. We work directly with your builder or trades to plan pipe runs before walls close up, so there are no costly reworks down the line.",
@@ -41,9 +41,9 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "blocked-drains",
     id: "emergency-blockages",
     title: "Blocked Drains & CCTV Camera Inspections",
-    metaTitle: "Blocked Drains & CCTV Inspections Perth",
+    metaTitle: "Blocked Drains & CCTV Inspections Fremantle & Perth",
     metaDescription:
-      "Fast blocked drain clearing and CCTV camera inspections across Perth. Diagnose and clear blockages, tree roots and pipe damage with specialised equipment. Free quotes.",
+      "Fast blocked drain clearing and CCTV camera inspections across Fremantle, southern suburbs and Perth. Diagnose and clear blockages, tree roots and pipe damage with specialised equipment. Free quotes.",
     desc: "Fast, reliable response when you need it most. We use specialised equipment and CCTV drain cameras to clear blockages and see exactly what's happening underground before you dig.",
     whyUs:
       "A blocked drain rarely stays a small problem for long, and guessing what's causing it leads to unnecessary digging. We carry both drain clearing equipment and CCTV inspection cameras on every vehicle, so most jobs are diagnosed and fixed in a single visit.",
@@ -80,9 +80,9 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "hot-water-repairs",
     id: "hot-water",
     title: "Hot Water",
-    metaTitle: "Hot Water System Repairs & Installation Perth",
+    metaTitle: "Hot Water System Repairs & Installation Fremantle & Perth",
     metaDescription:
-      "Hot water system repairs, servicing and installation across Perth. Continuous flow, heat pump, gas and electric systems. Honest advice, free quotes.",
+      "Hot water system repairs, servicing and installation across Fremantle and Perth. Continuous flow, heat pump, gas and electric systems. Honest advice, free quotes.",
     desc: "From continuous flow units to heat pumps, we install, service and repair every type of hot water system. Fast response when you're left without hot water.",
     whyUs:
       "We work on all hot water system types and brands, so you get honest advice on whether to repair or replace, not just a sales pitch for a new unit.",
@@ -125,10 +125,10 @@ export const serviceCategories: ServiceCategory[] = [
     slug: "maintenance-repairs",
     id: "general-maintenance",
     title: "Maintenance Plumbing & Repairs",
-    metaTitle: "Plumbing Maintenance & Repairs Perth",
+    metaTitle: "Plumbing Maintenance & Repairs Fremantle & Perth",
     metaDescription:
-      "General plumbing repairs and maintenance across Perth. Leaking taps, toilet repairs, reticulation fixes, burst pipes and backflow testing. Free quotes.",
-    desc: "Don't let minor leaks turn into major headaches. We handle all the day-to-day plumbing fixes to keep your home running efficiently.",
+      "General plumbing repairs and maintenance across Fremantle and Perth. Leaking taps, toilet repairs, reticulation fixes and burst pipes. Free quotes.",
+    desc: "Don't let minor leaks turn into major headaches. We handle all the day-to-day plumbing fixes to keep Fremantle and Perth homes running efficiently.",
     whyUs:
       "Most repair jobs are quoted honestly on the spot, with no more than what's needed to fix the problem properly. We stock common parts on the truck to get you sorted in one visit where possible.",
     imageId: "general_repairs_1_aoxt4g",
@@ -141,16 +141,15 @@ export const serviceCategories: ServiceCategory[] = [
       "Burst Pipe Repairs",
       "Garden Tap Repairs & Replacement",
       "Toilet Cistern Repairs",
-      "Backflow Prevention (RPZD) Testing",
     ],
   },
   {
     slug: "gas-fitting",
     id: "gas-hot-water",
     title: "Gas Fitting",
-    metaTitle: "Gas Fitting Perth | Licensed Gas Fitter",
+    metaTitle: "Gas Fitting Fremantle & Perth | Licensed Gas Fitter",
     metaDescription:
-      "Licensed gas fitting across Perth: appliance installs, general gas fitting and gas meter relocations to Australian standards. Free quotes.",
+      "Licensed gas fitting across Fremantle and Perth: appliance installs, general gas fitting and gas meter relocations to Australian standards. Free quotes.",
     desc: "Gas can be dangerous if appliances are not installed appropriately and by a qualified gas fitter. We install ALL gas appliances as per the manufacturer's guidelines and the Australian standards. This ensures that every single customer is safe when using their new appliance and can have absolute peace of mind that no corners were cut in the process.",
     whyUs:
       "Gas work is licensed for a reason. Every installation is certified and compliant, so you're covered by insurance and by the manufacturer's warranty.",
@@ -179,6 +178,29 @@ export const serviceCategories: ServiceCategory[] = [
         imageId: "F19FDD26-BD51-4F9A-AC08-A79DB215E81D_1_105_c_nt6edv",
         alt: "Testing gas pressure on a cooktop gas line under the cabinet",
       },
+    ],
+  },
+  {
+    slug: "commercial-plumbing",
+    id: "commercial-plumbing",
+    title: "Commercial Plumbing",
+    metaTitle: "Commercial Plumbing Fremantle & Perth | RPZD Backflow Testing",
+    metaDescription:
+      "Commercial plumbing and RPZD backflow testing for Fremantle and Perth businesses. Trade waste, grease traps, strata maintenance and commercial gas fitting. Free quotes.",
+    desc: "High-capacity gas fitting and plumbing solutions for Fremantle and Perth businesses, from routine backflow compliance testing to full commercial fit-outs.",
+    whyUs:
+      "Businesses can't afford plumbing downtime or compliance gaps. We handle scheduled backflow testing, strata maintenance and commercial repairs with minimal disruption to your operations, and provide the paperwork you need for compliance records.",
+    imageId: "commerical_gzrzhn",
+    iconName: "construction",
+    services: [
+      "Backflow Prevention (RPZD) Testing",
+      "Commercial Gas Fitting & Appliance Installation",
+      "Trade Waste & Grease Trap Servicing",
+      "Strata & Body Corporate Plumbing Maintenance",
+      "Commercial Hot Water Systems",
+      "Shop & Office Fit-Out Plumbing",
+      "Commercial Drain Clearing & CCTV Inspections",
+      "Water Meter & Isolation Valve Servicing",
     ],
   },
 ];

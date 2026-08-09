@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-import { CheckCircle2, Home, Wrench, Flame, Camera, ArrowRight } from "lucide-react";
+import { CheckCircle2, Home, Wrench, Flame, Camera, Construction, ArrowRight } from "lucide-react";
 import { serviceCategories } from "./servicesData";
 
-const ICONS = { home: Home, wrench: Wrench, flame: Flame, camera: Camera };
+const ICONS = { home: Home, wrench: Wrench, flame: Flame, camera: Camera, construction: Construction };
 
 export default function ServicesContent() {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";

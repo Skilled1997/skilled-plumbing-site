@@ -46,7 +46,7 @@ export default function HomePage() {
       href: "/services/home-renovations"
     },
     {
-      title: "Leaking Taps",
+      title: "Maintenance Plumbing & Repairs",
       desc: "Quick, reliable fixes to save water and prevent property damage.",
       imageId: "leaking_tap_hi7bb5",
       icon: <Droplet className="w-6 h-6" />,
@@ -80,7 +80,7 @@ export default function HomePage() {
       desc: "High-capacity gas fitting and plumbing solutions for local Perth businesses.",
       imageId: "commerical_gzrzhn",
       icon: <Construction className="w-6 h-6" />,
-      href: "/our-services"
+      href: "/services/commercial-plumbing"
     }
   ];
 

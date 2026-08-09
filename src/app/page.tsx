@@ -136,6 +136,7 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Home Renovations & Extensions" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Reticulation Repairs" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "Commercial Plumbing" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Backflow Prevention (RPZD) Testing" } },
     ],
   },
 };
