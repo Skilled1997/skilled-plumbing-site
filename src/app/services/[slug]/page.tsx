@@ -58,6 +58,14 @@ export default async function Page({
     },
     areaServed: "Perth, WA",
     description: category.metaDescription,
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: category.title,
+      itemListElement: category.services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: service },
+      })),
+    },
   };
 
   return (

@@ -30,6 +30,10 @@ export const serviceCategories: ServiceCategory[] = [
       "Home Renovations",
       "Extensions & Additions",
       "Wall Chasing & Concrete Cutting",
+      "New Bathroom Plumbing",
+      "New Kitchen Plumbing",
+      "Laundry Plumbing Installations",
+      "Dishwasher & Washing Machine Plumbing",
     ],
   },
   {
@@ -50,6 +54,9 @@ export const serviceCategories: ServiceCategory[] = [
       "Blocked Showers",
       "Blocked Basins",
       "Blocked Sinks",
+      "Blocked Stormwater Drains",
+      "Tree Root Removal",
+      "Drain Jetting",
     ],
   },
   {
@@ -69,6 +76,8 @@ export const serviceCategories: ServiceCategory[] = [
       "Pipe & Drain Locating",
       "Blockage & Tree Root Diagnosis",
       "Pre-Purchase Drain Inspections",
+      "Sewer Line Camera Inspections",
+      "Stormwater Drain Inspections",
     ],
   },
   {
@@ -90,6 +99,9 @@ export const serviceCategories: ServiceCategory[] = [
       "Reticulation (Retic) Repairs",
       "Hot Water System Repairs, Replacement & Servicing",
       "Burst Pipe Repairs",
+      "Garden Tap Repairs & Replacement",
+      "Toilet Cistern Repairs",
+      "Backflow Prevention (RPZD) Testing",
     ],
   },
   {
@@ -108,6 +120,10 @@ export const serviceCategories: ServiceCategory[] = [
       "Hot Water Systems (Install & Repair)",
       "General Gas Fitting",
       "Gas Meter Relocations",
+      "Gas Cooktop Installation & Replacement",
+      "Gas Leak Detection & Repairs",
+      "Gas Heater Installation & Servicing",
+      "Gas Appliance Compliance Certificates",
     ],
   },
 ];
