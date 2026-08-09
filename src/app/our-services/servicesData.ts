@@ -240,7 +240,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaTitle: "Gas Fitting Fremantle & Perth | Licensed Gas Fitter",
     metaDescription:
       "Licensed gas fitting across Fremantle and Perth: appliance installs, general gas fitting and gas meter relocations to Australian standards. Free quotes.",
-    desc: "Gas can be dangerous if appliances are not installed appropriately and by a qualified gas fitter. We install ALL gas appliances as per the manufacturer's guidelines and the Australian standards. This ensures that every single customer is safe when using their new appliance and can have absolute peace of mind that no corners were cut in the process.",
+    desc: "Gas work carries real safety risks when it isn't carried out by a qualified professional. Every appliance we install is fitted strictly to manufacturer guidelines and Australian standards, so you can trust the job is done safely, compliantly and without shortcuts.",
     whyUs:
       "Gas work is licensed for a reason. Every installation is certified and compliant, so you're covered by insurance and by the manufacturer's warranty.",
     imageId: "04B541F2-3159-4786-BA27-7A33486AC600_1_105_c_bfqsiu",
