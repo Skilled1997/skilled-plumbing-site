@@ -44,12 +44,12 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
 
           {/* Main Column */}
           <div className="md:col-span-2">
-            <div className="relative h-72 md:h-96 w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 mb-10">
+            <div className="relative h-80 md:h-[480px] w-full rounded-2xl overflow-hidden shadow-lg border border-slate-100 mb-10">
               <CldImage
                 config={{ cloud: { cloudName: cloudName } }}
                 src={category.imageId}
                 width={1200}
-                height={600}
+                height={900}
                 crop="fill"
                 gravity="auto"
                 priority
