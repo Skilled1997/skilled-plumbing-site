@@ -105,6 +105,32 @@ export const serviceCategories: ServiceCategory[] = [
       "Toilet Cistern Repairs",
       "Backflow Prevention (RPZD) Testing",
     ],
+    gallery: [
+      {
+        imageId: "AA8950E0-47D5-496C-AAE4-F69D07FE869D_1_105_c_mtk8ri",
+        alt: "Newly installed Thermann electric hot water storage tank",
+      },
+      {
+        imageId: "440C72C4-4F27-4869-9816-D2CEF77E6715_1_105_c_ymimsl",
+        alt: "Wilson SuperX instantaneous electric hot water unit installed on a wall",
+      },
+      {
+        imageId: "3017654F-7D23-483B-8AEC-1AF0027E6597_1_105_c_xuksxe",
+        alt: "Gas storage hot water system installed against a house wall",
+      },
+      {
+        imageId: "gas1_xlsd4z",
+        alt: "Rheem continuous flow gas hot water unit installed on a brick wall",
+      },
+      {
+        imageId: "IMG_0738_dmb7eo",
+        alt: "Technician installing a gas hot water unit on a brick wall",
+      },
+      {
+        imageId: "B26F9834-9A6E-4119-A236-A771B4C5144E_1_105_c_p8vzb7",
+        alt: "Rheem gas continuous flow hot water unit with copper pipework",
+      },
+    ],
   },
   {
     slug: "gas-fitting",
