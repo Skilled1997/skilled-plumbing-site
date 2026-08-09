@@ -24,8 +24,8 @@ export default function AboutContent() {
       icon: <Handshake className="w-6 h-6" />,
     },
     {
-      title: "8+ Years In The Trade",
-      desc: "Old school service and craftsmanship on every plumbing and gas fitting job.",
+      title: "8+ Years Experience",
+      desc: "Hands-on plumbing and gas fitting experience on jobs of every size.",
       icon: <Wrench className="w-6 h-6" />,
     },
   ];
@@ -44,28 +44,29 @@ export default function AboutContent() {
               About Us
             </h1>
             <p className="text-lg text-slate-600 leading-relaxed font-light mb-8">
-              Old school service, built on trust, honesty and integrity.
+              A licensed Fremantle plumber and gas fitter, trusted across Perth for honest,
+              reliable work.
             </p>
 
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
-                Straight out of school, I gave accounting and finance a crack. After one semester
-                of uni, I knew it wasn&apos;t for me, so I deferred my studies and spent a couple of
-                years working as a disability support worker before deciding to start a plumbing
-                career instead.
+                Skilled Plumbing Services is run by Ren, a licensed plumber and gas fitter with
+                over eight years of trade experience across Perth and the southern suburbs. Every
+                job — from a leaking tap to a full commercial fit-out — is carried out personally
+                by Ren, not handed off to a call centre or a rotating team of subcontractors.
               </p>
               <p>
-                That was over eight years ago, and I haven&apos;t looked back since. Some of the best
-                people I&apos;ve met have come from the plumbing trade, and I genuinely believe it&apos;s
-                a special industry to be part of.
+                Before plumbing, Ren worked as a disability support worker, an experience that
+                shaped a genuine focus on communication and looking after the people he works for.
+                That same approach defines Skilled Plumbing Services today: honest advice,
+                transparent pricing and quality workmanship on every job, no matter the size.
               </p>
               <p>
-                Today I&apos;m proud to run Skilled Plumbing Services and offer a high-quality
-                plumbing service built on trust, honesty and integrity. We work with anyone and
-                everyone — homeowners, renters, real estate agents, strata and commercial clients —
-                with only quality solutions.
+                Fully licensed and insured (PL11063 | GF20308), Skilled Plumbing Services proudly
+                serves homeowners, renters, real estate agents, strata and commercial clients
+                across Fremantle, the southern suburbs and greater Perth.
               </p>
-              <p className="font-semibold text-slate-900">— Ren, Founder</p>
+              <p className="font-semibold text-slate-900">— Ren, Licensed Plumber &amp; Founder</p>
             </div>
           </div>
 
