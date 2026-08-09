@@ -96,6 +96,7 @@ const localBusinessSchema = {
     "Naval Base",
     "Leeming",
     "Bateman",
+    "Bull Creek",
     "Rossmoyne",
     "Shelley",
     "Riverton",
