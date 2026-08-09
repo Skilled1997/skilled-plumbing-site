@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
 
       <div className="space-y-6 leading-relaxed">
         <p className="font-semibold text-lg">
-          Skilled Plumbing Services (ABN 42 200 618 577)
+          Skilled Plumbing Services (ABN 30 700 290 633)
         </p>
 
         <p>
