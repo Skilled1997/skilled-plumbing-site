@@ -63,7 +63,7 @@ export default function ServicesContent() {
                       config={{ cloud: { cloudName: cloudName } }}
                       src={category.imageId}
                       fill
-                      alt={category.title}
+                      alt={category.imageAlt || category.title}
                       sizes="(max-width: 1024px) 100vw, 50vw" // This was already perfect!
                       className="object-cover transition-transform duration-700 hover:scale-105"
                     />

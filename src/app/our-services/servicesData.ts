@@ -7,6 +7,7 @@ export type ServiceCategory = {
   desc: string;
   whyUs: string;
   imageId: string;
+  imageAlt?: string;
   iconName: "home" | "wrench" | "flame" | "camera";
   services: string[];
 };
@@ -41,7 +42,8 @@ export const serviceCategories: ServiceCategory[] = [
     desc: "Fast, reliable response when you need it most. We use specialized equipment to clear stubborn blockages and secure burst pipes to prevent property damage.",
     whyUs:
       "A blocked drain rarely stays a small problem for long. We carry drain clearing equipment on every vehicle so most blockages are cleared in a single visit, without guesswork.",
-    imageId: "general_repairs_1_aoxt4g",
+    imageId: "Drain_Cleaning_yytgkv",
+    imageAlt: "Unblocking a urinal waste pipe in a plumbing duct",
     iconName: "wrench",
     services: [
       "Blocked Toilets",

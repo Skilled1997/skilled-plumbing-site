@@ -69,7 +69,8 @@ export default function HomePage() {
     {
       title: "Blocked Drains",
       desc: "Specialised equipment to clear stubborn blockages and prevent future issues.",
-      imageId: "IMG_1194_cvyz0e",
+      imageId: "Drain_Cleaning_yytgkv",
+      imageAlt: "Unblocking a urinal waste pipe in a plumbing duct",
       icon: <Wrench className="w-6 h-6" />,
       href: "/services/blocked-drains"
     },
@@ -174,7 +175,7 @@ export default function HomePage() {
                     config={{ cloud: { cloudName: cloudName } }}
                     src={service.imageId}
                     fill
-                    alt={service.title}
+                    alt={service.imageAlt || service.title}
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-0"
                     onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}

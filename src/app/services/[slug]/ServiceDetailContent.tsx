@@ -24,7 +24,7 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
             fill
             priority
             sizes="100vw"
-            alt={category.title}
+            alt={category.imageAlt || category.title}
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent" />
