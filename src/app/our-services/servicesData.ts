@@ -123,10 +123,6 @@ export const serviceCategories: ServiceCategory[] = [
         alt: "Rheem continuous flow gas hot water unit installed on a brick wall",
       },
       {
-        imageId: "IMG_0738_dmb7eo",
-        alt: "Technician installing a gas hot water unit on a brick wall",
-      },
-      {
         imageId: "B26F9834-9A6E-4119-A236-A771B4C5144E_1_105_c_p8vzb7",
         alt: "Rheem gas continuous flow hot water unit with copper pipework",
       },
