@@ -134,7 +134,7 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
           {/* Always fills the hero's full height (no gap below it). Width is derived from that
               height at a 16:9 ratio and capped at 100%, so on unusually wide/short windows the
               photo pillarboxes instead of cropping down to an extreme sliver. */}
-          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 aspect-video max-w-full overflow-hidden">
+          <div className="absolute top-0 h-full left-1/2 -translate-x-1/2 aspect-video max-w-full overflow-hidden">
             <CldImage
               config={{ cloud: { cloudName: cloudName } }}
               src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
