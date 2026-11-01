@@ -131,24 +131,19 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
         <div className="absolute top-0 left-0 right-0 h-24 z-30" />
 
         <div className="absolute inset-0 z-0">
-          {/* Always fills the hero's full height (no gap below it). Width is derived from that
-              height at a 16:9 ratio and capped at 100%, so on unusually wide/short windows the
-              photo pillarboxes instead of cropping down to an extreme sliver. */}
-          <div className="absolute top-0 h-full left-1/2 -translate-x-1/2 aspect-video max-w-full overflow-hidden">
-            <CldImage
-              config={{ cloud: { cloudName: cloudName } }}
-              src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
-              fill
-              priority
-              crop="fill"
-              gravity="south"
-              aspectRatio="16:9"
-              alt="Skilled Plumbing Services Hero"
-              sizes="100vw"
-              className="object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-              onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
-            />
-          </div>
+          {/* Shows the entire, uncropped photo (object-contain) rather than cropping it to
+              fill the band edge-to-edge - the source is portrait and the hero is a wide strip,
+              so filling the width completely would always mean cutting part of the photo off. */}
+          <CldImage
+            config={{ cloud: { cloudName: cloudName } }}
+            src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
+            fill
+            priority
+            alt="Skilled Plumbing Services Hero"
+            sizes="100vw"
+            className="object-contain opacity-0 transition-opacity duration-1000 ease-in-out"
+            onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent z-10" />
           {/* Mobile-specific bottom fade to ensure text contrast on small screens */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent lg:hidden z-10" />
