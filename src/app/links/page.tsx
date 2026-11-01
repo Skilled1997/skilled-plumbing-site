@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { ArrowRight, ExternalLink } from "lucide-react";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Links | Skilled Plumbing Services",
@@ -22,10 +23,10 @@ const links = [
     href: "/about",
     icon: <ArrowRight className="w-4 h-4" />
   },
-  { 
-    label: "Request a Quote", 
+  {
+    label: "Request a Quote",
     sub: "Contact us now ",
-    href: "/quote", 
+    href: SERVICEM8_BOOKING_URL,
   },
 ];
 

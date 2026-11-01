@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CldImage } from "next-cloudinary";
 import { CheckCircle2, Home, Wrench, Flame, Camera, Construction, ArrowRight } from "lucide-react";
 import { serviceCategories } from "./servicesData";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 const ICONS = { home: Home, wrench: Wrench, flame: Flame, camera: Camera, construction: Construction };
 
@@ -102,9 +103,9 @@ export default function ServicesContent() {
                     <Link href={`/services/${category.slug}`} className="inline-flex items-center gap-2 text-slate-900 font-bold hover:text-blue-600 transition-colors group">
                       Full details on {category.title} <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                    <Link href="/quote" className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors group">
+                    <a href={SERVICEM8_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors group">
                       Need help with this? Get a quote <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -123,9 +124,9 @@ export default function ServicesContent() {
             Plumbing issues rarely fit neatly into a box. If you have a custom project or an unusual problem, reach out. We can handle it.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/quote" className="bg-white text-blue-700 hover:bg-slate-50 font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
+            <a href={SERVICEM8_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 hover:bg-slate-50 font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
               Request a Free Quote
-            </Link>
+            </a>
           </div>
         </div>
       </section>

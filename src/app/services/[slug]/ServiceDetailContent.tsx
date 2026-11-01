@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CldImage } from "next-cloudinary";
 import { CheckCircle2, Home, Wrench, Flame, Camera, Construction, ArrowRight, ChevronDown } from "lucide-react";
 import { ServiceCategory, serviceCategories } from "../../our-services/servicesData";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 const ICONS = { home: Home, wrench: Wrench, flame: Flame, camera: Camera, construction: Construction };
 
@@ -89,12 +90,14 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Why choose Skilled Plumbing Services</h2>
             <p className="text-lg text-slate-600 leading-relaxed mb-10">{category.whyUs}</p>
 
-            <Link
-              href="/quote"
+            <a
+              href={SERVICEM8_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-xl shadow-md transition duration-200 active:scale-[0.98]"
             >
               Get a Free Quote <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
 
           {/* Sidebar: Specialities + Other Services */}
@@ -163,9 +166,9 @@ export default function ServiceDetailContent({ category }: { category: ServiceCa
             Plumbing issues rarely fit neatly into a box. If you have a custom project or an unusual problem, reach out. We can handle it.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/quote" className="bg-white text-blue-700 hover:bg-slate-50 font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
+            <a href={SERVICEM8_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-blue-700 hover:bg-slate-50 font-bold py-4 px-10 rounded-xl shadow-xl transition duration-300 active:scale-95">
               Request a Free Quote
-            </Link>
+            </a>
           </div>
         </div>
       </section>

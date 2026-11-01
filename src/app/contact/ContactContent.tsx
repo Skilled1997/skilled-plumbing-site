@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { CldImage } from "next-cloudinary";
 import { Phone, Mail, MapPin, MessageSquare, ArrowRight, Clock } from "lucide-react";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 export default function ContactContent() {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
@@ -103,12 +103,14 @@ export default function ContactContent() {
               </p>
             </div>
           </div>
-          <Link
-            href="/quote"
+          <a
+            href={SERVICEM8_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 w-full sm:w-auto justify-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-md transition duration-200 active:scale-[0.98]"
           >
             Get a Quote <ArrowRight className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </section>
     </div>

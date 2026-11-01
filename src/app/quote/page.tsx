@@ -1,18 +1,6 @@
-import type { Metadata } from "next";
-import QuoteContent from "./QuoteContent";
-
-export const metadata: Metadata = {
-  title: "Free Quote",
-  description:
-    "Request a free plumbing or gas fitting quote. Serving Fremantle, Cockburn, Melville and all Perth suburbs. Fast response, upfront transparent pricing.",
-  openGraph: {
-    title: "Free Quote | Skilled Plumbing Services Perth",
-    description:
-      "Request a free plumbing or gas fitting quote. Serving Fremantle, Cockburn, Melville and all Perth suburbs. Fast response, upfront transparent pricing.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
-  },
-};
+import { redirect } from "next/navigation";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 export default function Page() {
-  return <QuoteContent />;
+  redirect(SERVICEM8_BOOKING_URL);
 }

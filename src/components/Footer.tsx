@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { serviceCategories } from "@/app/our-services/servicesData";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +11,7 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Our Services", href: "/our-services" },
-    { name: "Get a Quote", href: "/quote" },
+    { name: "Get a Quote", href: SERVICEM8_BOOKING_URL, external: true },
     { name: "Contact Us", href: "/contact" },
   ];
 
@@ -69,6 +70,8 @@ export default function Footer() {
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
                   {link.name}

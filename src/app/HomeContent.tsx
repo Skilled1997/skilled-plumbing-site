@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { CldImage } from "next-cloudinary";
 import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Star } from 'lucide-react';
 import { photos } from "@/data/photos";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -297,7 +298,7 @@ export default function HomePage() {
             className="fixed bottom-6 md:bottom-8 left-1/2 z-40 w-[60%] md:w-auto max-w-sm"
           >
             <motion.div animate={{ y: [0, -4, 0] }} transition={{ repeat: Infinity, duration: 3, delay: 3 }}>
-              <a href="/quote" className="flex w-full justify-center items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-full shadow-2xl font-medium tracking-wide transition-all duration-300 hover:bg-slate-800 active:scale-95 backdrop-blur-md">
+              <a href={SERVICEM8_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="flex w-full justify-center items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-full shadow-2xl font-medium tracking-wide transition-all duration-300 hover:bg-slate-800 active:scale-95 backdrop-blur-md">
                 <span>Get a Free Quote</span>
               </a>
             </motion.div>
@@ -311,9 +312,9 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Need a site visit or a quote?</h2>
           <p className="text-slate-400 mb-10 text-lg">We provide upfront, transparent advice and obligation-free quoting for all plumbing and gas work.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/quote" className="bg-white text-slate-900 hover:bg-blue-50 font-bold py-4 px-10 rounded-xl transition duration-300">
+            <a href={SERVICEM8_BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bg-white text-slate-900 hover:bg-blue-50 font-bold py-4 px-10 rounded-xl transition duration-300">
               Request Your Quote
-            </Link>
+            </a>
 
           </div>
         </div>

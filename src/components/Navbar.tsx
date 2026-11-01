@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Get a Quote", href: "/quote" },
+    { name: "Get a Quote", href: SERVICEM8_BOOKING_URL, external: true },
     { name: "About Us", href: "/about" },
     { name: "Our Services", href: "/our-services" },
     { name: "Links", href: "/links" },
@@ -43,12 +44,14 @@ export default function Navbar() {
     const isActive = pathname === link.href;
 
     return (
-      <Link 
+      <Link
         key={link.href}
         href={link.href}
+        target={link.external ? "_blank" : undefined}
+        rel={link.external ? "noopener noreferrer" : undefined}
         className={`text-[10px] uppercase tracking-[0.2em] font-bold transition-all px-5 py-2.5 rounded-full ${
           isActive
-            ? 'bg-slate-900 text-white shadow-md' 
+            ? 'bg-slate-900 text-white shadow-md'
             : 'text-slate-400 hover:text-slate-900 hover:bg-slate-100/50'
         }`}
       >
@@ -101,6 +104,8 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noopener noreferrer" : undefined}
               onClick={() => setIsOpen(false)}
               className={`px-8 py-5 text-sm font-bold tracking-[0.2em] uppercase transition-all flex justify-between items-center ${
                 isCTA 
