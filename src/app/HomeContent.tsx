@@ -133,7 +133,7 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
         <div className="absolute inset-0 z-0">
           <CldImage
             config={{ cloud: { cloudName: cloudName } }}
-            src="IMG_0746_3_zk87u4"
+            src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
             fill
             priority
             alt="Skilled Plumbing Services Hero"
