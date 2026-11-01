@@ -131,19 +131,23 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
         <div className="absolute top-0 left-0 right-0 h-24 z-30" />
 
         <div className="absolute inset-0 z-0">
-          <CldImage
-            config={{ cloud: { cloudName: cloudName } }}
-            src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
-            fill
-            priority
-            crop="fill"
-            gravity="auto"
-            aspectRatio="16:9"
-            alt="Skilled Plumbing Services Hero"
-            sizes="100vw"
-            className="object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
-            onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
-          />
+          {/* Fixed 16:9 crop zone so the framing stays consistent regardless of window shape,
+              instead of stretching to fill whatever height the viewport happens to give the hero. */}
+          <div className="absolute inset-x-0 top-0 aspect-video overflow-hidden">
+            <CldImage
+              config={{ cloud: { cloudName: cloudName } }}
+              src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
+              fill
+              priority
+              crop="fill"
+              gravity="auto"
+              aspectRatio="16:9"
+              alt="Skilled Plumbing Services Hero"
+              sizes="100vw"
+              className="object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
+              onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent z-10" />
           {/* Mobile-specific bottom fade to ensure text contrast on small screens */}
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent lg:hidden z-10" />
