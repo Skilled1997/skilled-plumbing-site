@@ -131,9 +131,9 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
         <div className="absolute top-0 left-0 right-0 h-24 z-30" />
 
         <div className="absolute inset-0 z-0">
-          {/* Shows the entire, uncropped photo (object-contain) rather than cropping it to
-              fill the band edge-to-edge - the source is portrait and the hero is a wide strip,
-              so filling the width completely would always mean cutting part of the photo off. */}
+          {/* TEST: object-fill stretches the photo non-uniformly to fill the band with no crop
+              and no empty space - trade-off is the photo is visibly distorted (round pipes
+              become ovals, straight lines bend). Comparing against object-contain per request. */}
           <CldImage
             config={{ cloud: { cloudName: cloudName } }}
             src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
@@ -141,7 +141,7 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
             priority
             alt="Skilled Plumbing Services Hero"
             sizes="100vw"
-            className="object-contain opacity-0 transition-opacity duration-1000 ease-in-out"
+            className="object-fill opacity-0 transition-opacity duration-1000 ease-in-out"
             onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/40 to-transparent z-10" />
