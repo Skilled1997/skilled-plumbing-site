@@ -9,9 +9,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState, useRef, useEffect } from "react";
+import type { GoogleReviewsData } from "@/lib/google-reviews";
 
 
-export default function HomePage() {
+export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsData | null }) {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
 
   // Helper to grab a specific photo object by its src ID from your photos.ts
@@ -87,7 +88,7 @@ export default function HomePage() {
 
   const googleReviewUrl = "https://www.google.com/maps/place/?q=place_id:ChIJ6fbDOctNuggRkqNn7dK-FO4";
 
-  const testimonials = [
+  const fallbackTestimonials = [
     {
       name: "Benjamin Handcock",
       timeAgo: "2 months ago",
@@ -104,6 +105,12 @@ export default function HomePage() {
       text: "We couldn't be happier with the service! He replaced our toilet and did an amazing job. Very professional, punctual, and the quality of the work was excellent. Everything was left clean and working perfectly. Highly recommend!",
     },
   ];
+
+  const testimonials = liveReviews?.reviews.length
+    ? liveReviews.reviews.slice(0, 3)
+    : fallbackTestimonials;
+  const displayRating = liveReviews?.rating ?? 5.0;
+  const displayReviewCount = liveReviews?.reviewCount ?? 43;
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
@@ -247,13 +254,13 @@ export default function HomePage() {
             <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">Customer Reviews</h2>
             <h3 className="text-4xl font-bold text-slate-900 leading-tight mb-6">What Our Customers Say</h3>
             <div className="inline-flex items-center gap-3 bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4">
-              <span className="text-2xl font-extrabold text-slate-900">5.0</span>
+              <span className="text-2xl font-extrabold text-slate-900">{displayRating.toFixed(1)}</span>
               <span className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </span>
-              <span className="text-sm text-slate-500 font-medium">from 43 Google reviews</span>
+              <span className="text-sm text-slate-500 font-medium">from {displayReviewCount} Google reviews</span>
             </div>
           </div>
 

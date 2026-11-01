@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HomeContent from "./HomeContent";
+import { getGoogleReviews } from "@/lib/google-reviews";
 
 export const metadata: Metadata = {
   title: "Plumber Perth | Skilled Plumbing Services",
@@ -142,14 +143,27 @@ const localBusinessSchema = {
   },
 };
 
-export default function Page() {
+export default async function Page() {
+  const liveReviews = await getGoogleReviews();
+
+  const schema = liveReviews
+    ? {
+        ...localBusinessSchema,
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: liveReviews.rating,
+          reviewCount: liveReviews.reviewCount,
+        },
+      }
+    : localBusinessSchema;
+
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <HomeContent />
+      <HomeContent liveReviews={liveReviews} />
     </>
   );
 }
