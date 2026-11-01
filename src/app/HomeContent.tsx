@@ -136,6 +136,9 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
             src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
             fill
             priority
+            crop="fill"
+            gravity="auto"
+            aspectRatio="16:9"
             alt="Skilled Plumbing Services Hero"
             sizes="100vw"
             className="object-cover opacity-0 transition-opacity duration-1000 ease-in-out"
