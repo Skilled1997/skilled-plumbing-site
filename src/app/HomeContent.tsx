@@ -141,7 +141,7 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
               fill
               priority
               crop="fill"
-              gravity="auto"
+              gravity="south"
               aspectRatio="16:9"
               alt="Skilled Plumbing Services Hero"
               sizes="100vw"
