@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { CldImage } from "next-cloudinary";
-import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Star } from 'lucide-react';
+import { CheckCircle, ArrowRight, Wrench, Droplet, Flame, HomeIcon, Construction, Settings, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { photos } from "@/data/photos";
 import { SERVICEM8_BOOKING_URL } from "@/lib/constants";
 import { motion, AnimatePresence } from "framer-motion";
@@ -107,10 +107,20 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
   ];
 
   const testimonials = liveReviews?.reviews.length
-    ? liveReviews.reviews.slice(0, 3)
+    ? liveReviews.reviews
     : fallbackTestimonials;
   const displayRating = liveReviews?.rating ?? 5.0;
   const displayReviewCount = liveReviews?.reviewCount ?? 43;
+
+  const [reviewStart, setReviewStart] = useState(0);
+  const canRotateReviews = testimonials.length > 3;
+  const visibleTestimonials = canRotateReviews
+    ? [0, 1, 2].map((offset) => testimonials[(reviewStart + offset) % testimonials.length])
+    : testimonials;
+
+  const rotateReviews = (direction: 1 | -1) => {
+    setReviewStart((prev) => (prev + direction + testimonials.length) % testimonials.length);
+  };
 
   return (
     <div className="min-h-screen bg-[#FAFAFA]">
@@ -265,21 +275,75 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((t, idx) => (
-              <div key={idx} className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
-                  ))}
-                </div>
-                <p className="text-slate-700 leading-relaxed mb-6">&ldquo;{t.text}&rdquo;</p>
-                <div className="flex items-center justify-between">
-                  <span className="font-bold text-slate-900">{t.name}</span>
-                  <span className="text-xs text-slate-400">{t.timeAgo}</span>
-                </div>
+          <div className="relative">
+            {canRotateReviews && (
+              <button
+                type="button"
+                onClick={() => rotateReviews(-1)}
+                aria-label="Previous reviews"
+                className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200 shadow-sm text-slate-500 hover:text-slate-900 hover:border-slate-300 transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+            )}
+
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={reviewStart}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="grid grid-cols-1 md:grid-cols-3 gap-8"
+              >
+                {visibleTestimonials.map((t, idx) => (
+                  <div key={idx} className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
+                    <div className="flex items-center gap-1 mb-4">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                      ))}
+                    </div>
+                    <p className="text-slate-700 leading-relaxed mb-6">&ldquo;{t.text}&rdquo;</p>
+                    <div className="flex items-center justify-between">
+                      <span className="font-bold text-slate-900">{t.name}</span>
+                      <span className="text-xs text-slate-400">{t.timeAgo}</span>
+                    </div>
+                  </div>
+                ))}
+              </motion.div>
+            </AnimatePresence>
+
+            {canRotateReviews && (
+              <button
+                type="button"
+                onClick={() => rotateReviews(1)}
+                aria-label="Next reviews"
+                className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200 shadow-sm text-slate-500 hover:text-slate-900 hover:border-slate-300 transition-colors"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            )}
+
+            {canRotateReviews && (
+              <div className="flex md:hidden justify-center gap-4 mt-6">
+                <button
+                  type="button"
+                  onClick={() => rotateReviews(-1)}
+                  aria-label="Previous reviews"
+                  className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200 shadow-sm text-slate-500"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => rotateReviews(1)}
+                  aria-label="Next reviews"
+                  className="flex items-center justify-center w-11 h-11 rounded-full bg-white border border-slate-200 shadow-sm text-slate-500"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
               </div>
-            ))}
+            )}
           </div>
 
           <div className="text-center mt-12">
