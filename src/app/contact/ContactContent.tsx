@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { CldImage } from "next-cloudinary";
-import { Phone, Mail, MapPin, MessageSquare, ArrowRight } from "lucide-react";
+import { Phone, Mail, MapPin, MessageSquare, ArrowRight, Clock } from "lucide-react";
 
 export default function ContactContent() {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME || "dppw8lfxp";
@@ -56,6 +56,16 @@ export default function ContactContent() {
                 <div>
                   <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">Based in Fremantle</span>
                   <span className="text-base font-medium">Servicing Fremantle & surrounding suburbs</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4 text-slate-600">
+                <div className="p-3 bg-slate-50 text-slate-500 rounded-xl">
+                  <Clock className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">Business Hours</span>
+                  <span className="text-base font-medium">7am – 5pm, Monday to Sunday</span>
                 </div>
               </div>
             </div>

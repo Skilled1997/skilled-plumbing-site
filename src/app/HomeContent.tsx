@@ -252,7 +252,7 @@ export default function HomePage() {
                   <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
                 ))}
               </span>
-              <span className="text-sm text-slate-500 font-medium">from 35 Google reviews</span>
+              <span className="text-sm text-slate-500 font-medium">from 43 Google reviews</span>
             </div>
           </div>
 

@@ -22,6 +22,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${category.metaTitle} | Skilled Plumbing Services`,
       description: category.metaDescription,
+      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     },
   };
 }

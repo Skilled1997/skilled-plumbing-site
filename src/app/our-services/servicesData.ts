@@ -161,8 +161,8 @@ export const serviceCategories: ServiceCategory[] = [
         alt: "Rheem continuous flow gas hot water unit installed on a brick wall",
       },
       {
-        imageId: "B26F9834-9A6E-4119-A236-A771B4C5144E_1_105_c_p8vzb7",
-        alt: "Rheem gas continuous flow hot water unit with copper pipework",
+        imageId: "D77DEB7F-2ADC-4F47-BEBA-A86E5D949BEE_1_102_o_sdwe8p",
+        alt: "Rheem gas continuous flow hot water unit installed on weatherboard siding",
       },
     ],
     faqs: [
@@ -342,6 +342,64 @@ export const serviceCategories: ServiceCategory[] = [
         question: "Do you take on small commercial jobs, or only larger projects?",
         answer:
           "We take on jobs of all sizes, from a single café fit-out to larger construction and civil works. Get in touch for a free quote regardless of scale.",
+      },
+    ],
+  },
+  {
+    slug: "plumbing-inspection-reports",
+    id: "plumbing-inspections",
+    title: "Plumbing Inspections & Reports",
+    metaTitle: "Plumbing Inspection Reports for Real Estate & Strata Perth",
+    metaDescription:
+      "CCTV drain surveys and plumbing condition reports for real estate agents, strata companies and commercial property across Perth and Fremantle. Written reports, diagrams and footage supplied. Free quotes.",
+    desc: "Independent plumbing condition reports for pre-purchase due diligence, strata common property and multi-unit commercial sites — CCTV drain surveys, fixture inspections and defect reporting referenced against current plumbing standards.",
+    whyUs:
+      "Real estate agents, strata managers and builders need a plumbing report they can rely on, not a vague opinion. Every inspection is backed by a CCTV drain camera fitted with a sonde locator to pinpoint and depth-check any defect, and every finding is referenced against AS/NZS 3500.2, the NCC Plumbing Code of Australia and local Plumbers Licensing Board WA requirements. You receive a written report, drainage diagrams and full camera footage, so the findings hold up for strata records, insurance or building warranty claims. For multi-unit sites we scope the job by number of units and access points upfront, and let you know straight away if anything can't be reached from an existing inspection opening or requires a return visit.",
+    imageId: "Drain_Camera_u6ns9r",
+    imageAlt: "Technician setting up a CCTV drain camera for a commercial property inspection",
+    iconName: "camera",
+    services: [
+      "CCTV Sewer & Stormwater Drain Surveys",
+      "Pre-Purchase Plumbing Inspections",
+      "Strata & Body Corporate Building Condition Reports",
+      "Commercial & Industrial Multi-Unit Inspections",
+      "Fixture, Tap & Toilet Condition Assessments",
+      "Hot Water Unit Compliance Checks (TPR & ECV Valve Testing)",
+      "Tempering Valve & Hot Water Temperature Testing",
+      "Defect Location, Depth & Pipe Gradient Reporting",
+      "Written Reports with Diagrams & Camera Footage",
+      "AS/NZS 3500 & NCC Compliance Reporting",
+    ],
+    gallery: [
+      {
+        imageId: "commerical_gzrzhn",
+        alt: "Commercial property plumbing inspection site",
+      },
+      {
+        imageId: "AA8950E0-47D5-496C-AAE4-F69D07FE869D_1_105_c_mtk8ri",
+        alt: "Hot water storage tank checked as part of a plumbing inspection report",
+      },
+    ],
+    faqs: [
+      {
+        question: "What does a plumbing inspection report include?",
+        answer:
+          "A written report covering every defect found, drainage diagrams marking the sections inspected, and the full CCTV camera footage — useful for strata records, pre-purchase due diligence or insurance and warranty claims.",
+      },
+      {
+        question: "Can you inspect a whole strata complex or block of commercial units in one visit?",
+        answer:
+          "Yes. We scope multi-unit sites by the number of units and access points before quoting, and if anything can't be completed on the day, we let you know immediately and quote the remainder separately.",
+      },
+      {
+        question: "Do you provide CCTV drain footage for pre-purchase or insurance purposes?",
+        answer:
+          "Yes, full camera footage is provided along with the written report, which is commonly requested for pre-purchase inspections, insurance claims and building warranty disputes.",
+      },
+      {
+        question: "How are defects referenced in the report?",
+        answer:
+          "Any non-compliant or defective work is referenced against the relevant clauses of AS/NZS 3500.2, the NCC Plumbing Code of Australia, and local Plumbers Licensing Board WA technical notes, so findings are backed by the applicable standard.",
       },
     ],
   },

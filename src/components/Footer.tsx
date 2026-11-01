@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { serviceCategories } from "@/app/our-services/servicesData";
 
@@ -105,6 +105,10 @@ export default function Footer() {
             <li className="flex items-start gap-3 text-sm text-slate-400">
               <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
               Fremantle &amp; southern suburbs, Perth WA
+            </li>
+            <li className="flex items-start gap-3 text-sm text-slate-400">
+              <Clock className="w-4 h-4 shrink-0 mt-0.5" />
+              7am &ndash; 5pm, Monday to Sunday
             </li>
           </ul>
         </div>

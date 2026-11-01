@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Skilled Plumbing Services",
     description:
       "Get in touch with Skilled Plumbing Services. Call, email or request a free quote for plumbing and gas fitting work across Fremantle, southern suburbs and Perth, WA.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 

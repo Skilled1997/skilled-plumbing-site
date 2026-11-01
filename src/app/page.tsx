@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     title: "Plumber Perth | Skilled Plumbing Services",
     description:
       "Perth's trusted local plumber, based in Fremantle. Serving the southern suburbs and all of Perth, WA. Honest, reliable plumbing and gas fitting. Free site visits and quotes.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
 
