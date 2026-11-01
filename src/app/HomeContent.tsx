@@ -156,6 +156,7 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
                 <path fill="#FBBC05" d="M5.28 14.281A7.2 7.2 0 0 1 4.909 12c0-.792.136-1.56.371-2.281V6.613H1.28A11.996 11.996 0 0 0 0 12c0 1.937.464 3.77 1.28 5.387l3.999-3.106z"/>
                 <path fill="#EA4335" d="M12 4.773c1.76 0 3.343.605 4.588 1.794l3.441-3.44C17.951 1.19 15.236 0 12 0 7.31 0 3.253 2.69 1.28 6.613l3.999 3.106C6.23 6.884 8.874 4.773 12 4.773z"/>
               </svg>
+              <span className="text-sm font-semibold text-slate-200">({displayReviewCount})</span>
             </a>
             <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
               Old School <span className="text-blue-400">Service.</span>
