@@ -131,9 +131,10 @@ export default function HomePage({ liveReviews }: { liveReviews: GoogleReviewsDa
         <div className="absolute top-0 left-0 right-0 h-24 z-30" />
 
         <div className="absolute inset-0 z-0">
-          {/* Fixed 16:9 crop zone so the framing stays consistent regardless of window shape,
-              instead of stretching to fill whatever height the viewport happens to give the hero. */}
-          <div className="absolute inset-x-0 top-0 aspect-video overflow-hidden">
+          {/* Always fills the hero's full height (no gap below it). Width is derived from that
+              height at a 16:9 ratio and capped at 100%, so on unusually wide/short windows the
+              photo pillarboxes instead of cropping down to an extreme sliver. */}
+          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 aspect-video max-w-full overflow-hidden">
             <CldImage
               config={{ cloud: { cloudName: cloudName } }}
               src="105B886C-226A-46E0-8416-9C4E9B0F1E8F_1_105_c_oicnrw"
